@@ -88,7 +88,7 @@
   
   .question {
     cursor: pointer;
-    font-weight: bold;
+    font-family: sans-serif;
     margin-bottom: 10px;
   }
   
@@ -134,7 +134,6 @@
   
   .flagWithText p {
     font-size: 0.9rem;
-    /* Other text styles */
   }
   
   .highlight {
@@ -146,9 +145,11 @@
     color: #27282a;
   }
 
-
-
-/* styles/Team.module.css */
+.introHeader {
+  display: flex;
+  justify-content: space-around;
+  font-size: xx-large;
+}
 
 .intorHeading {
   max-width: none;
@@ -217,8 +218,6 @@
   line-height: 1.5;
 }
 
-/* styles/Team.module.css */
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -227,7 +226,28 @@
 
 .heading {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 2px;
+  font-size: xx-large;
+  color:rgb(220, 120, 27);
+}
+
+.headiInfo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: large;
+}
+
+.faqIcon {
+  display: flex;
+    justify-content: center;
+}
+
+.borderDesign {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 25px;
+  box-shadow: 0px 2px 8px 3px rgba(220, 214, 214, 0.1);
 }
 
 .teamCards {
@@ -306,8 +326,6 @@
   box-shadow: 0px 2px 8px 3px rgba(220, 214, 214, 0.1);
 }
 
-/* styles/Team.module.css */
-
 .faqSection {
   margin-top: 20px;
 }
@@ -337,4 +355,11 @@
 
 .faq.active .answer {
   display: block;
+}
+
+.borderFaq {
+  width: 8%;
+  margin: 0 auto;
+  border-bottom: 1px solid #eb3939;
+  margin-bottom: 15px;
 }

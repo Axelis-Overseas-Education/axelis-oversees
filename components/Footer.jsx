@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import {  
   FaFacebookSquare,
   FaLinkedin,
@@ -31,7 +32,9 @@ const Footer = () => {
     <div>
         <h6 className='font-medium text-gray-400'>About Axelis Overseas</h6>        
         <ul>
+            <Link href="/about">
             <li className='py-2 text-sm'>About us</li>
+            </Link>
             <li className='py-2 text-sm'>Work with us/ Partner with us</li>
             <li className='py-2 text-sm'>(Alumni)</li>
             <li className='py-2 text-sm'>Testimonials (ss)</li>

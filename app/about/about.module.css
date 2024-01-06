@@ -1,0 +1,365 @@
+  .landmarkPage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    background: linear-gradient(rgba(211, 225, 229, 0.5), rgba(202, 217, 225, 0.5)), url("/gif/landmark.gif");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .aboutContainer {
+    background: linear-gradient(rgba(211, 225, 229, 0.5), rgba(202, 217, 225, 0.5)), url("/images/landmark_page.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 100% auto;
+  }
+
+  .introHeading {
+    color: #0487f3;
+    font-size: x-large;
+  }
+
+  .landIntro {
+    height:625px;
+    padding: 30px;
+    font-weight: 400;
+  }
+
+  .introDescription {
+    font-size: xx-large;
+  }
+
+  .introText {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+  }
+  
+  .introVideo {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    max-width:300px;
+  }
+
+  .introGrid {
+    display:flex;
+  }
+  
+  /* Statistics section */
+  .statsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin:15px;
+  }
+  
+  .statsGrid li {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Teammates section */
+  .teammatesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .teammateCard {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* FAQ section */
+  .faqItem {
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    cursor: pointer;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .answer {
+    display: none;
+  }
+  
+  /* Expand/Collapse effect for FAQ */
+  .question.active + .answer {
+    display: block;
+  }
+
+.flagImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  .flagContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+  }
+  
+  .flagWithText {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+  }
+  
+  .flag {
+    width: 50px;
+    height: auto;
+  }
+  
+  .flagWithText img {
+    margin-right: 10px;
+    width: 90px;
+    height: auto;
+  }
+  
+  .flagWithText p {
+    font-size: 0.9rem;
+  }
+  
+  .highlight {
+    color: #0487f3;
+  }
+
+  .textShade {
+    font-weight: 600;
+    color: #27282a;
+  }
+
+.introHeader {
+  display: flex;
+  justify-content: space-around;
+  font-size: xx-large;
+}
+
+.intorHeading {
+  max-width: none;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.introSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.introduction {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.introduction h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* CSS styles for the statistics section */
+.statistics {
+  margin-bottom: 50px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.statsGrid li {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.statsGrid li div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statsGrid li i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.statsGrid li h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.statsGrid li p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2px;
+  font-size: xx-large;
+  color:rgb(220, 120, 27);
+}
+
+.headiInfo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: large;
+}
+
+.faqIcon {
+  display: flex;
+    justify-content: center;
+}
+
+.borderDesign {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 25px;
+  box-shadow: 0px 2px 8px 3px rgba(220, 214, 214, 0.1);
+}
+
+.teamCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.container {
+  max-width: none;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.teamCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.memberCard {
+  position: static;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 14px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  width: 230px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.memberCard:hover {
+  transform: translateY(-10px);
+}
+
+.memberImage {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: -webkit-inline-box;
+}
+
+.icon {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.memberCard:hover .icon {
+  opacity: 1;
+}
+
+.icon a {
+  font-size: 20px;
+  color: #555;
+  margin: 0 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.icon a:hover {
+  color: #0077b5;
+}
+
+.roleBorder {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 8px 3px rgba(220, 214, 214, 0.1);
+}
+
+.faqSection {
+  margin-top: 20px;
+}
+
+.faq {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.faq .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.faq .question span {
+  font-size: 20px;
+}
+
+.faq .answer {
+  display: none;
+  padding: 10px;
+}
+
+.faq.active .answer {
+  display: block;
+}
+
+.borderFaq {
+  width: 8%;
+  margin: 0 auto;
+  border-bottom: 1px solid #eb3939;
+  margin-bottom: 15px;
+}

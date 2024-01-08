@@ -2,6 +2,8 @@
 import React, {useState} from 'react';
 import Link from 'next/link'
 import RegisterForm from './RegisterForm';
+import TestimonialCarousel from './TestimonialCarousel';
+import Offerings from './offerings';
 
 const LandingPage = () => {
   const [window, setWindow] = useState(false)
@@ -27,11 +29,19 @@ const LandingPage = () => {
           <h2 className="text-3xl font-bold mb-8">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-md shadow-md">
-              <h3 className="text-xl font-semibold mb-2">University Selection</h3>
+              <h3 className="text-xl font-semibold mb-2">Part Time Job Assistance</h3>
               <p>Discover the best-fit universities for your career goals.</p>
             </div>
             <div className="bg-white p-6 rounded-md shadow-md">
-              <h3 className="text-xl font-semibold mb-2">Visa Assistance</h3>
+              <h3 className="text-xl font-semibold mb-2">Housing Assistance</h3>
+              <p>Discover the best-fit universities for your career goals.</p>
+            </div>
+            <div className="bg-white p-6 rounded-md shadow-md">
+              <h3 className="text-xl font-semibold mb-2">Scholarship (1600+)</h3>
+              <p>Discover the best-fit universities for your career goals.</p>
+            </div>
+            <div className="bg-white p-6 rounded-md shadow-md">
+              <h3 className="text-xl font-semibold mb-2">15+ Loans partners</h3>
               <p>Guidance and support throughout the visa application process.</p>
             </div>
             <div className="bg-white p-6 rounded-md shadow-md">
@@ -39,6 +49,7 @@ const LandingPage = () => {
               <p>Prepare for standardized tests with our expert tutors.</p>
             </div>
           </div>
+          {/* <Offerings/> */}
         </div>
       </section>
 
@@ -51,6 +62,7 @@ const LandingPage = () => {
           </button>
         </div>
       </section>
+      {/* <TestimonialCarousel/> */}
     </div>
   );
 };

@@ -1,0 +1,129 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  } */
+  
+  
+  .mainContent{
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px; /* Set the height of the container to the full viewport height */
+  }
+  
+  .articleDesign {
+   margin-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+  
+  .articleDesign h2 {
+    margin-bottom: 10px;
+  }
+  
+   .articleDesign img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  .blueBox {
+    background-color: #84cde3; /* Blue background color */
+    padding: 15px; /* Adjust padding as needed */
+    margin-bottom: 20px; /* Add margin to separate it from the next element */
+    border-radius: 5px; /* Optional: Add rounded corners */
+  }
+  .hasBlushLightPurpleGradientBackground {
+  padding: 10px;
+  background: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+  }
+  .redFont{
+  color : red;
+  font-size: 20px; 
+  margin-top: 10px;
+  margin-bottom: 5px;
+  }
+
+  .hasBlushLightPurpleGradientBackground li {
+  list-style-type: disc;
+  margin-left: 30px; /* Adjust the margin as needed */
+  margin-bottom: 5px; /* Add space between two list items */
+  }
+
+  .hasBackground {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px; /* Adjust margin as needed */
+    padding: 15px; 
+  }
+
+  .hasBackground th, .hasBackground td {
+    border: 1px solid #000; /* Set border properties as needed */
+    padding: 8px; /* Set padding as needed */
+  }
+
+  .lorTable {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  }
+  
+  .lorTable th, .lorTable td {
+  border: 1px solid #000;
+  padding: 8px;
+  }
+  
+  .lorTable th {
+  background-color: #e9fbe5;
+  }
+  
+  .introHeading {
+    color: #0487f3;
+    font-size: x-large;
+  }
+
+  .mainHeading {
+    color: #333;
+    font-size: 48px; 
+    font-weight: bold;
+
+  }
+
+  .lorMainImage{
+    max-width: 100%; 
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+  }
+
+  .heading2{
+    color: #333;
+    font-size: 30px; 
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  .heading3{
+    color: #333;
+    font-size: 20px; 
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  .listStyle {
+    list-style-type: disc; 
+    padding-left: 20px;
+  }

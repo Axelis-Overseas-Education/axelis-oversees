@@ -3,7 +3,6 @@ import React, {useState} from 'react';
 import Link from 'next/link'
 import RegisterForm from './RegisterForm';
 import TestimonialCarousel from './TestimonialCarousel';
-import Offerings from './offerings';
 
 const LandingPage = () => {
   const [window, setWindow] = useState(false)

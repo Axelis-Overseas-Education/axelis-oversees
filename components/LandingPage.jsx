@@ -9,7 +9,7 @@ const LandingPage = () => {
   const [window, setWindow] = useState(false)
   return (
     <div className="font-sans">      
-      <section className="bg-gray-100 py-16">
+      <section className="mt-16 bg-gray-100 py-16">
         <div className="container mx-auto text-center">                 
         {/* <div className={window? 'show m-auto':'hidden'}>
             <RegisterForm/>

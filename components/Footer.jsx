@@ -43,8 +43,12 @@ const Footer = () => {
         <div>
           <h6 className='font-medium text-gray-400'>Resources</h6>
           <ul>
+          <Link href="/lor_page">
             <li className='py-2 text-sm'>LOR</li>
+            </Link>
+            <Link href="/sop_page">
             <li className='py-2 text-sm'>SOP</li>
+            </Link>
             {/* <li className='py-2 text-sm'>IELTS Prep Crash Course / TOEFL</li> */}
             {/* <li className='py-2 text-sm'>API Status</li> */}
           </ul>

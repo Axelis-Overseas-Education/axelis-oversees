@@ -1,109 +1,196 @@
-import React from 'react'
+"use client";
+import { useRouter } from 'next/navigation';
+import React, { useState } from 'react'
 
-const RegisterForm = () => {
+const RegisterhtmlForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [education, setEducation] = useState("");
+  const [ielts_exam, setIelts] = useState("");
+  const [course, setCourse] = useState("");
+  const [country, setCountry] = useState("");
+  const [start, setStart] = useState("");
+  const [fund, setFund] = useState("");
+
+  const router = useRouter();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!name) {
+      alert('Full Name is required.');
+      return;
+    }
+    else if (!email) {
+      alert('Email is required.');
+      return;
+    }
+    else if (!phone) {
+      alert('Phone Number is required.');
+      return;
+    }
+    else if (!education) {
+      alert('Education is required.');
+      return;
+    }
+    else if (!ielts_exam) {
+      alert('Selection of Ielts Exam is required.');
+      return;
+    }
+    else if (!course) {
+      alert('Course is required.');
+      return;
+    }
+    else if (!start) {
+      alert('Enter your start date ');
+      return;
+    }
+    else if (!fund) {
+      alert('Selection of Funds is required ');
+      return;
+    }
+    try {
+      const res = await fetch("http://localhost:3000/api/customer", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          education,
+          ielts_exam,
+          course,
+          country,
+          start,
+          fund,
+        }),
+      });
+
+      if (res.ok) {
+        console.log("Success");
+        router.push('/');
+      } else {
+        throw new Error("Failed to create a Customer");
+      }
+
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
-    <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-    <div class="bg-white py-8 px-6 shadow rounded-lg sm:px-10">
-      <form class="mb-0 space-y-6" action="#" method="POST">
-        <div>
-          <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
-          <div class="mt-1">
-            <input className='w-full border-gray-300 rounded-lg shadow-sm' id="name" name="name" type="text" required class="" />
+    <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+      <div className="bg-white py-8 px-6 shadow rounded-lg sm:px-10">
+        <form onSubmit={handleSubmit} className="mb-0 space-y-6" action="#" method="POST">
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Full Name</label>
+            <div className="mt-1">
+              <input
+                onChange={(e) => setName(e.target.value)}
+                value={name}
+                className='w-full border-gray-300 rounded-lg shadow-sm' type="text" required />
+            </div>
           </div>
-        </div>
-        <div>
-          <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
-          <div class="mt-1">
-            <input className='w-full border-gray-300 rounded-lg shadow-sm' id="email" name="email" type="email" autocomplete="email" required class="" />
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Email address</label>
+            <div className="mt-1">
+              <input
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+                className='w-full border-gray-300 rounded-lg shadow-sm' type="email" autoComplete="email" required />
+            </div>
           </div>
-        </div>
 
-        <div>
-          <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
-          <div class="mt-1">
-            <input className='w-full border-gray-300 rounded-lg shadow-sm' class="appearance-none" id="phone" name="phone" type="number"  required />
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Phone Number</label>
+            <div className="mt-1">
+              <input
+                onChange={(e) => setPhone(e.target.value)}
+                value={phone}
+                className='w-full border-gray-300 rounded-lg shadow-sm' type="number" required />
+            </div>
           </div>
-        </div>
 
-        <div>
-          <label for="education" class="block text-sm font-medium text-gray-700">Your highest education level</label>
-          <div class="mt-1">
-            <select className='w-full border-gray-300 rounded-lg shadow-sm' name="education" id="education" class="" required>
-              <option value="">Please select</option>
-              <option value="small">Right Out of School</option>
-              <option value="medium">Undergraduate</option>
-              <option value="large">Post Graduate</option>
-              <option value="large">PHD</option>
-            </select>
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Your highest education level</label>
+            <div className="mt-1">
+              <select
+                onChange={(e) => setEducation(e.target.value)}
+                value={education}
+                className='w-full border-gray-300 rounded-lg shadow-sm' required>
+                <option value="">Please select</option>
+                <option value="school">Right Out of School</option>
+                <option value="UG">Undergraduate</option>
+                <option value="PG">Post Graduate</option>
+                <option value="PHD">PHD</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <div>
-          <label for="ielts_exam" class="block text-sm font-medium text-gray-700">Have you taken IELTS exam</label>
-          <div class="mt-1">
-            <select className='w-full border-gray-300 rounded-lg shadow-sm' name="ielts_exam" id="ielts_exam" class="" required>
-              <option value="">Please select</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>              
-            </select>
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Have you taken IELTS exam</label>
+            <div className="mt-1">
+              <select
+                onChange={(e) => setIelts(e.target.value)}
+                value={ielts_exam}
+                className='w-full border-gray-300 rounded-lg shadow-sm' required>
+                <option value="">Please select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <div>
-          <label for="course" class="block text-sm font-medium text-gray-700">What kind of course you are looking for?</label>
-          <div class="mt-1">
-            <input className='w-full border-gray-300 rounded-lg shadow-sm' id="course" name="course" type="text" required class="" />
+          <div>
+            <label className="block text-sm font-medium text-gray-700">What kind of course you are looking for?</label>
+            <div className="mt-1">
+              <input
+                onChange={(e) => setCourse(e.target.value)}
+                value={course}
+                className='w-full border-gray-300 rounded-lg shadow-sm' type="text" required />
+            </div>
           </div>
-        </div>
-        <div>
-          <label for="country" class="block text-sm font-medium text-gray-700">Where would you like to fly?</label>
-          <div class="mt-1">
-            <input className='w-full border-gray-300 rounded-lg shadow-sm' id="country" name="country" type="text" required class="" />
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Where would you like to fly?</label>
+            <div className="mt-1">
+              <input
+                onChange={(e) => setCountry(e.target.value)}
+                value={country}
+                className='w-full border-gray-300 rounded-lg shadow-sm' type="text" required />
+            </div>
           </div>
-        </div>
-        <div>
-          <label for="start" class="block text-sm font-medium text-gray-700">When do you plan on starting your studies abroad? </label>
-          <div class="mt-1">
-            <input className='w-full border-gray-300 rounded-lg shadow-sm' id="start" name="start" type="text" required class="" />
+          <div>
+            <label className="block text-sm font-medium text-gray-700">When do you plan on starting your studies abroad? </label>
+            <div className="mt-1">
+              <input
+                onChange={(e) => setStart(e.target.value)}
+                value={start} className='w-full border-gray-300 rounded-lg shadow-sm' type="text" required />
+            </div>
           </div>
-        </div>
-        
-        <div>
-          <label for="ielts_exam" class="block text-sm font-medium text-gray-700">How do you plan to fund your studies?</label>
-          <div class="mt-1">
-            <select className='w-full border-gray-300 rounded-lg shadow-sm' name="ielts_exam" id="ielts_exam" class="" required>
-              <option value="">Please select</option>
-              <option value="Yes">Self- Funded</option>
-              <option value="No">Partially Funded with Scholarship</option>              
-              <option value="No">Student Loan</option>              
-            </select>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700">How do you plan to fund your studies?</label>
+            <div className="mt-1">
+              <select
+                onChange={(e) => setFund(e.target.value)}
+                value={fund}
+                className='w-full border-gray-300 rounded-lg shadow-sm' required>
+                <option value="">Please select</option>
+                <option value="Self-Funded">Self- Funded</option>
+                <option value="Partially Funded with Scholarship">Partially Funded with Scholarship</option>
+                <option value="Student Loan">Student Loan</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <div class="flex items-center">
-          <input id="terms-and-privacy" name="terms-and-privacy" type="checkbox" class="" />
-          <label for="terms-and-privacy" class="ml-2 block text-sm text-gray-900"
-            >I agree to the
-            <a href="#" class="text-indigo-600 hover:text-indigo-500">Terms</a>
-            and
-            <a href="#" class="text-indigo-600 hover:text-indigo-500">Privacy Policy</a>.
-          </label>
-        </div>
-        {/* <!-- <div>
-          <label for="subscribe" class="block text-sm font-medium text-gray-700">Would you like to receive email updates about relevant study abroad opportunities, scholarships, and events from Oversee Education Pvt Ltd?</label>
-          <div class="mt-1">
-            <select name="subscribe" id="subscribe" class="" required>
-              <option value="">Please select</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>              
-            </select>
+          <div>
+            <button type="submit" className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Register</button>
           </div>
-        </div> --> */}
-        <div>
-          <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Register</button>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
-  </div>
 
   )
 }
 
-export default RegisterForm
+export default RegisterhtmlForm

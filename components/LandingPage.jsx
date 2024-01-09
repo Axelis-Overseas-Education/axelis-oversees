@@ -47,9 +47,9 @@ const LandingPage = () => {
       <section className="mt-16 bg-gray-100 py-16">{/* Content */}</section>
 
       <section className="py-16">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Our Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="container mx-auto px-8">
+          <h2 className="text-3xl font-bold mb-8">Our Offerings</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-6" >
             {services.map((service, index) => (
               <div key={index} className="bg-white p-6 rounded-md shadow-md">
                 <h3 className="text-xl font-semibold mb-2">{service.title}</h3>

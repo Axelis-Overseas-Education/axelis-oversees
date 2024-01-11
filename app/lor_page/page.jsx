@@ -5,14 +5,20 @@ import styles from './lor.module.css';
 
 const Lor = () => {
   return (
-    <div>
+    <div className = {styles.lorFont}>
       <section className={styles.mainContent}>
   <article className = {styles.articleDesign}>
+    <div className={styles.lorHeading}>
+    <div>
     <h2 className={styles.mainHeading}>Letter of Recommendation</h2>
+    </div>
+    <div>
     <img className={styles.lorMainImage} 
       src="/images/lor.jpg"
       alt="lor pics"
     />
+    </div>
+    </div>
     <p>
       Whenever someone is looking to attain an academic qualification or trying
       to apply for a job at a prestigious organization, they generally need to

@@ -113,6 +113,10 @@
     font-weight: bold;
     margin-bottom: 5px;
     margin-top: 10px;
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .heading3{
@@ -121,9 +125,22 @@
     font-weight: bold;
     margin-bottom: 5px;
     margin-top: 10px;
+    color: #7e7232;
+    border-bottom: 2px solid #9caf2d;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .listStyle {
     list-style-type: disc; 
     padding-left: 20px;
+  }
+
+  .lorFont{
+    font-family: 'Arial', sans-serif;
+  }
+
+  .lorHeading{
+    display: inline-flex;
+    align-items: center;
   }

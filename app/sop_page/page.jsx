@@ -3,14 +3,20 @@ import styles from 'app/lor_page/lor.module.css';
 
 const Sop = () => {
   return (
-    <div>
+    <div >
         <section className={styles.mainContent}>
     <article className = {styles.articleDesign}>
+    <div className={styles.lorHeading}>
+    <div>
       <h2 className={styles.mainHeading}>SOP (Statement of Purpose): Format, Samples, and Tips</h2>
+      </div>
+      <div>
       <img className={styles.lorMainImage} 
         src="/images/sop.jpg"
         alt="Sop pics"
       />
+      </div>
+      </div>
       <p>
         To aesthetically present a movie on the screen, great actors are the
         requisites. Similar is the case when one is carving their own career

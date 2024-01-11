@@ -35,7 +35,9 @@ const Footer = () => {
             <Link href="/about">
             <li className='py-2 text-sm'>About us</li>
             </Link>
+            <Link href="/workWithUs">
             <li className='py-2 text-sm'>Work with us/ Partner with us</li>
+            </Link>
             <li className='py-2 text-sm'>(Alumni)</li>
             <li className='py-2 text-sm'>Testimonials (ss)</li>
         </ul>

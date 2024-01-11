@@ -1,0 +1,141 @@
+ .culture {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .landmarkPage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    background: linear-gradient(rgba(211, 225, 229, 0.5), rgba(202, 217, 225, 0.5)), url("/images/workwithusland.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .headSummary {
+    margin-left: 100px;
+    font-size: xxx-large;
+  }
+
+  .introHeading {
+    color: #0487f3;
+    font-size: x-large;
+  }
+
+  .landIntro {
+    height:625px;
+    padding: 30px;
+    font-weight: 400;
+  }
+
+  .whyus {
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px;
+  }
+  
+  .whyus h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .whyus p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+
+  .WorkCulture{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: system-ui;
+    font-weight:500;
+  }
+
+.culture {
+   margin-bottom:20px;
+  }
+  
+  .cultureGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin:12px
+  }
+  
+  .cultureItem {
+    border: 0.1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight:400;
+  }
+  
+  
+  .cultureItem h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .cultureItem p {
+    font-size: 1em;
+    color: #555;
+  }
+
+.animatedHelicopter {
+    font-size: 8rem;
+    position: absolute;
+    top: 20%;
+    left: -60px;
+    transform: translateY(-50%);
+    animation: fly 4s linear infinite, rotateBlades 5s linear infinite;
+  }
+  
+  @keyframes fly {
+    to {
+      transform: translateX(100vw);
+    }
+  }
+  
+  @keyframes rotateBlades {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+.attractiveBanner {
+    font-size: 1.5rem;
+    background-color: #ce501e;
+    color: #fff;
+    padding: 20px;
+    margin-left:-20px;
+    transform: translateY(-100%);
+    animation: float 5s ease-in-out infinite, pulse 1s infinite;
+    border-radius: 5px;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateX(-50px);
+    }
+    50% {
+      transform: translateX(50px);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  

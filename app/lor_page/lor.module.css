@@ -144,3 +144,7 @@
     display: inline-flex;
     align-items: center;
   }
+
+  .jobassistancesubImage{
+    display: flex;
+  }

@@ -3,7 +3,7 @@ import styles from 'app/lor_page/lor.module.css';
 
 const Sop = () => {
   return (
-    <div >
+    <div>
         <section className={styles.mainContent}>
     <article className = {styles.articleDesign}>
     <div className={styles.lorHeading}>

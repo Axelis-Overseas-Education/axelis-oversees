@@ -59,7 +59,7 @@ const Footer = () => {
             <li className='py-2 text-sm'>USA</li>
             <li className='py-2 text-sm'>Netherlands</li>
             <li className='py-2 text-sm'>Ireland</li>
-            <li className='py-2 text-sm'>AUSTRALIA</li>
+            <Link href={'public/pdf/Australia.pdf'}><li className='py-2 text-sm'>AUSTRALIA</li></Link>
             <li className='py-2 text-sm'>CANADA</li>
             <li className='py-2 text-sm'>JAPAN</li>
             <li className='py-2 text-sm'>Singapore</li>

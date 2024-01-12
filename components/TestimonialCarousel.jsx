@@ -1,8 +1,7 @@
 // components/TestimonialCarousel.jsx
 "use client";
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { RiDoubleQuotesL , RiDoubleQuotesR } from "react-icons/ri";
 
 const TestimonialCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -111,258 +110,420 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <div className="testimonial-carousel">
-      <div className="arrow left-arrow" onClick={prevSlide}>
-        &lt; {/* Left arrow */}
-      </div>
+    // <div className="testimonial-carousel">
+    //   <div className="arrow left-arrow" onClick={prevSlide}>
+    //     &lt; {/* Left arrow */}
+    //   </div>
 
-      <div className="carousel-container">
-        <div className="testimonial-card previous">
+    //   <div className="carousel-container">
+    //     <div className="testimonial-card previous">
+    //       <div className="testimonial">
+    //         <div className="image-container">
+    //           <img
+    //             src={
+    //               testimonials[
+    //                 (activeIndex - 1 + testimonials.length) %
+    //                   testimonials.length
+    //               ].image
+    //             }
+    //             alt={
+    //               testimonials[
+    //                 (activeIndex - 1 + testimonials.length) %
+    //                   testimonials.length
+    //               ].name
+    //             }
+    //           />
+    //         </div>
+    //         <div className="info-container">
+    //           <div className="name-container">
+    //             <p>
+    //               {
+    //                 testimonials[
+    //                   (activeIndex - 1 + testimonials.length) %
+    //                     testimonials.length
+    //                 ].name
+    //               }
+    //             </p>{" "}
+    //           </div>
+    //         </div>
+    //         <div className="edu-container">
+    //           <p>
+    //             {
+    //               testimonials[
+    //                 (activeIndex - 1 + testimonials.length) %
+    //                   testimonials.length
+    //               ].uni
+    //             }
+    //           </p>
+    //           <p>
+    //             {
+    //               testimonials[
+    //                 (activeIndex - 1 + testimonials.length) %
+    //                   testimonials.length
+    //               ].degree
+    //             }
+    //           </p>
+    //         </div>
+    //         <div className="review-container">
+    //           <p>
+    //             {
+    //               testimonials[
+    //                 (activeIndex - 1 + testimonials.length) %
+    //                   testimonials.length
+    //               ].review
+    //             }
+    //           </p>
+    //         </div>
+    //         <div className="linkedin-container">
+    //           <a
+    //             href={
+    //               testimonials[
+    //                 (activeIndex - 1 + testimonials.length) %
+    //                   testimonials.length
+    //               ].linkedin
+    //             }
+    //             target="_blank"
+    //             rel="noopener noreferrer"
+    //           >
+    //             <FontAwesomeIcon icon={faLinkedin} />
+    //           </a>
+    //         </div>
+    //       </div>
+
+    //       <div className="testimonial-card current">
+    //         <div className="testimonial">
+    //           <div className="image-container">
+    //             <img
+    //               src={testimonials[activeIndex].image}
+    //               alt={testimonials[activeIndex].name}
+    //             />
+    //           </div>
+    //           <div className="info-container"></div>
+    //           <div className="name-container">
+    //             <p>{testimonials[activeIndex].name}</p>
+    //           </div>
+    //           <div className="edu-container">
+    //             {" "}
+    //             <p>{testimonials[activeIndex].uni}</p>
+    //             <p>{testimonials[activeIndex].degree}</p>
+    //           </div>
+    //           <div className="review-container">
+    //             <p>{testimonials[activeIndex].review}</p>
+    //           </div>
+    //           <div className="linkedin-container">
+    //             <a
+    //               href={testimonials[activeIndex].linkedin}
+    //               target="_blank"
+    //               rel="noopener noreferrer"
+    //             >
+    //               <FontAwesomeIcon icon={faLinkedin} />
+    //             </a>
+    //           </div>
+    //         </div>
+    //       </div>
+
+    //       <div className="testimonial-card next">
+    //         <div className="testimonial">
+    //           <div className="image-container">
+    //             <img
+    //               src={
+    //                 testimonials[(activeIndex + 1) % testimonials.length].image
+    //               }
+    //               alt={
+    //                 testimonials[(activeIndex + 1) % testimonials.length].name
+    //               }
+    //             />
+    //           </div>
+    //           <div className="info-container">
+    //             <div className="name-container">
+    //               <p>
+    //                 {testimonials[(activeIndex + 1) % testimonials.length].name}
+    //               </p>
+    //             </div>
+    //           </div>
+    //           <div className="edu-container">
+    //             <p>
+    //               {testimonials[(activeIndex + 1) % testimonials.length].uni}
+    //             </p>
+    //             <p>
+    //               {testimonials[(activeIndex + 1) % testimonials.length].degree}
+    //             </p>
+    //           </div>
+    //           <div className="review-container">
+    //             <p>
+    //               {testimonials[(activeIndex + 1) % testimonials.length].review}
+    //             </p>
+    //           </div>
+    //           <div className="linkedin-container">
+    //             <a
+    //               href={
+    //                 testimonials[(activeIndex + 1) % testimonials.length]
+    //                   .linkedin
+    //               }
+    //               target="_blank"
+    //               rel="noopener noreferrer"
+    //             >
+    //               <FontAwesomeIcon icon={faLinkedin} />
+    //             </a>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //     <div className="arrow right-arrow" onClick={nextSlide}>
+    //       &gt; {/* Right arrow */}
+    //     </div>
+
+    //     <style jsx>{`
+    //       .testimonial-carousel {
+    //         display: flex;
+    //         flex-direction: column; /* Align cards vertically */
+    //         align-items: center; /* Align cards center horizontally */
+    //         margin: 30px;
+    //       }
+          
+    //       .arrow {
+    //         font-size: 24px;
+    //         cursor: pointer;
+    //         background-color: #f2f2f2;
+    //         border-radius: 50%;
+    //         padding: 10px;
+    //         margin: 0 10px;
+    //         transition: background-color 0.3s ease;
+    //       }
+          
+    //       .left-arrow {
+    //         transform: rotate(360deg); /* Rotate left arrow */
+    //       }
+          
+    //       .arrow:hover {
+    //         background-color: #ddd;
+    //       }
+          
+    //       .testimonial-card:hover {
+    //         transform: scale(1.05);
+    //         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    //       }
+          
+    //       .testimonial-card.current {
+    //         transform: translateZ(0);
+    //         background-color: #ddd; /* Color for the centered card */
+    //       }
+          
+    //       .testimonial-card {
+    //         flex: 0 0 auto; /* Adjust card size if needed */
+    //         width: 80%; /* Adjust width of cards */
+    //       }
+          
+    //       .previous,
+    //       .next {
+    //         opacity: 0.6; /* Adjust the transparency of the side cards */
+    //       }
+          
+    //       .testimonial-card .image-container {
+    //         width: 80px;
+    //         height: 80px;
+    //         border-radius: 50%;
+    //         overflow: hidden;
+    //         margin-right: 20px;
+    //         float: left;
+    //       }
+          
+    //       .testimonial-card .image-container img {
+    //         width: 100%;
+    //         height: 100%;
+    //         object-fit: cover;
+    //       }
+          
+    //       .testimonial-card .info-container {
+    //         width: calc(100% - 100px); /* Adjust as per the requirement */
+    //         float: left;
+    //       }
+          
+    //       .testimonial-card .name-container {
+    //         font-weight: bold;
+    //         text-align: right;
+    //       }
+          
+    //       .testimonial-card .edu-container {
+    //         font-style: italic;
+    //         font-size: 0.8em;
+    //         text-align: right;
+    //       }
+          
+    //       .testimonial-card .review-container {
+    //         text-align: justify;
+    //         font-size: 0.8em;
+    //       }
+          
+    //       .testimonial-card .linkedin-container {
+    //         text-align: right;
+    //         margin-top: 10px; /* Adjust as needed */
+    //       }        `}</style>
+    //   </div>
+    // </div>
+    <div className="flex justify-center items-center my-24">
+    <div className="arrow left-arrow" onClick={prevSlide}>
+      &lt; {/* Left arrow */}
+    </div>
+    <div className="carousel-container">
+      <div className="testimonial-card previous">
+        <div className="testimonial">
+          <img
+            src={
+              testimonials[
+                (activeIndex - 1 + testimonials.length) % testimonials.length
+              ].image
+            }
+            alt={
+              testimonials[
+                (activeIndex - 1 + testimonials.length) % testimonials.length
+              ].name
+            }
+          />
+          <h2 className="float-left w-full text-lg font-medium text-white;
+  font-family: `Rubik`, sans-serif">
+            {" "}
+            {
+              testimonials[
+                (activeIndex - 1 + testimonials.length) % testimonials.length
+              ].name
+            }
+          </h2>  
+          <h2 className="float-left w-full text-lg font-medium text-white;
+  font-family: `Rubik`, sans-serif">
+            {" "}
+            {
+              testimonials[
+                (activeIndex - 1 + testimonials.length) % testimonials.length
+              ].uni
+            }
+          </h2>
+          <h2 className="float-left w-full text-sm font-medium text-white;
+  font-family: `Rubik`, sans-serif">
+            {" "}
+            {
+              testimonials[
+                (activeIndex - 1 + testimonials.length) % testimonials.length
+              ].degree
+            }
+          </h2>                      
+          <p className="inline-block pt-4 text-sm">          
+          {/* <RiDoubleQuotesL size={25} className=" inline-block -ml-6 -mt-4"/> */}
+            {
+              testimonials[
+                (activeIndex - 1 + testimonials.length) % testimonials.length
+              ].review
+            }
+            {/* <RiDoubleQuotesR size={25} className="inline-block -mt-4 content-end" /> */}
+          </p>                    
+        </div>
+        </div>
+        <div className="testimonial-card current">
           <div className="testimonial">
-            <div className="image-container">
-              <img
-                src={
-                  testimonials[
-                    (activeIndex - 1 + testimonials.length) %
-                      testimonials.length
-                  ].image
-                }
-                alt={
-                  testimonials[
-                    (activeIndex - 1 + testimonials.length) %
-                      testimonials.length
-                  ].name
-                }
-              />
-            </div>
-            <div className="info-container">
-              <div className="name-container">
-                <p>
-                  {
-                    testimonials[
-                      (activeIndex - 1 + testimonials.length) %
-                        testimonials.length
-                    ].name
-                  }
-                </p>{" "}
-              </div>
-            </div>
-            <div className="edu-container">
-              <p>
-                {
-                  testimonials[
-                    (activeIndex - 1 + testimonials.length) %
-                      testimonials.length
-                  ].uni
-                }
-              </p>
-              <p>
-                {
-                  testimonials[
-                    (activeIndex - 1 + testimonials.length) %
-                      testimonials.length
-                  ].degree
-                }
-              </p>
-            </div>
-            <div className="review-container">
-              <p>
-                {
-                  testimonials[
-                    (activeIndex - 1 + testimonials.length) %
-                      testimonials.length
-                  ].review
-                }
-              </p>
-            </div>
-            <div className="linkedin-container">
-              <a
-                href={
-                  testimonials[
-                    (activeIndex - 1 + testimonials.length) %
-                      testimonials.length
-                  ].linkedin
-                }
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-            </div>
-          </div>
-
-          <div className="testimonial-card current">
-            <div className="testimonial">
-              <div className="image-container">
-                <img
-                  src={testimonials[activeIndex].image}
-                  alt={testimonials[activeIndex].name}
-                />
-              </div>
-              <div className="info-container"></div>
-              <div className="name-container">
-                <p>{testimonials[activeIndex].name}</p>
-              </div>
-              <div className="edu-container">
-                {" "}
-                <p>{testimonials[activeIndex].uni}</p>
-                <p>{testimonials[activeIndex].degree}</p>
-              </div>
-              <div className="review-container">
-                <p>{testimonials[activeIndex].review}</p>
-              </div>
-              <div className="linkedin-container">
-                <a
-                  href={testimonials[activeIndex].linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="testimonial-card next">
-            <div className="testimonial">
-              <div className="image-container">
-                <img
-                  src={
-                    testimonials[(activeIndex + 1) % testimonials.length].image
-                  }
-                  alt={
-                    testimonials[(activeIndex + 1) % testimonials.length].name
-                  }
-                />
-              </div>
-              <div className="info-container">
-                <div className="name-container">
-                  <p>
-                    {testimonials[(activeIndex + 1) % testimonials.length].name}
-                  </p>
-                </div>
-              </div>
-              <div className="edu-container">
-                <p>
-                  {testimonials[(activeIndex + 1) % testimonials.length].uni}
-                </p>
-                <p>
-                  {testimonials[(activeIndex + 1) % testimonials.length].degree}
-                </p>
-              </div>
-              <div className="review-container">
-                <p>
-                  {testimonials[(activeIndex + 1) % testimonials.length].review}
-                </p>
-              </div>
-              <div className="linkedin-container">
-                <a
-                  href={
-                    testimonials[(activeIndex + 1) % testimonials.length]
-                      .linkedin
-                  }
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-              </div>
-            </div>
+            <img
+              src={testimonials[activeIndex].image}
+              alt={testimonials[activeIndex].name}
+            />            
+            <h2 className="float-left w-full text-lg font-medium text-white;
+  font-family: `Rubik`, sans-serif">{testimonials[activeIndex].name}</h2>
+            <h2 className="float-left w-full text-lg font-medium text-white;
+  font-family: `Rubik`, sans-serif">{testimonials[activeIndex].uni}</h2>
+            <h2 className="float-left w-full text-sm font-medium text-white;
+  font-family: `Rubik`, sans-serif">{testimonials[activeIndex].degree}</h2>
+            <p className="inline-block pt-4 text-sm">{testimonials[activeIndex].review}</p>            
           </div>
         </div>
-        <div className="arrow right-arrow" onClick={nextSlide}>
-          &gt; {/* Right arrow */}
+        <div className="testimonial-card next">
+          <div className="testimonial">
+            <img
+              src={testimonials[(activeIndex + 1) % testimonials.length].image}
+              alt={testimonials[(activeIndex + 1) % testimonials.length].name}
+            />
+            <h1 className="float-left w-full text-lg font-medium text-white;
+  font-family: `Rubik`, sans-serif">
+              {testimonials[(activeIndex + 1) % testimonials.length].name}
+            </h1>
+            <h2 className="float-left w-full text-lg font-medium text-white;
+  font-family: `Rubik`, sans-serif">
+              {testimonials[(activeIndex + 1) % testimonials.length].uni}
+            </h2>
+            <h2 className="float-left w-full text-sm font-medium text-white;
+  font-family: `Rubik`, sans-serif">
+              {testimonials[(activeIndex + 1) % testimonials.length].degree}
+            </h2>
+            <p className="inline-block pt-4 text-sm">{testimonials[(activeIndex + 1) % testimonials.length].review}</p>
+            
+          </div>
         </div>
-
-        <style jsx>{`
-          .testimonial-carousel {
-            display: flex;
-            flex-direction: column; /* Align cards vertically */
-            align-items: center; /* Align cards center horizontally */
-            margin: 30px;
-          }
-
-          .arrow {
-            font-size: 24px;
-            cursor: pointer;
-            background-color: #f2f2f2;
-            border-radius: 50%;
-            padding: 10px;
-            margin: 0 10px;
-            transition: background-color 0.3s ease;
-          }
-
-          .left-arrow {
-            transform: rotate(360deg); /* Rotate left arrow */
-          }
-
-          .arrow:hover {
-            background-color: #ddd;
-          }
-
-          .testimonial-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-          }
-
-          .testimonial-card.current {
-            transform: translateZ(0);
-            background-color: #ddd; /* Color for the centered card */
-          }
-          .testimonial-card {
-            flex: 0 0 auto; /* Adjust card size if needed */
-            width: 80%; /* Adjust width of cards */
-          }
-
-          .previous,.next {
-              opacity: 0.6; /* Adjust the transparency of the side cards */
-          }
-
-          .testimonial-card .image-container {
-              width: 80px;
-              height: 80px;
-              border-radius: 50%;
-              overflow: hidden;
-              margin-right: 20px;
-              float: left;
-          }
-
-          .testimonial-card .image-container img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-          }
-
-          .testimonial-card .info-container {
-              width: calc(100% - 100px); /* Adjust as per the requirement */
-              float: left;
-          }
-
-          .testimonial-card .name-container {
-              font-weight: bold;
-              text-align: right;
-          }
-
-          .testimonial-card .edu-container {
-              font-style: italic;
-              font-size: 0.8em;
-              text-align: right;
-          }
-
-          .testimonial-card .review-container {
-              text-align: justify;
-              font-size: 0.8em;
-          }
-
-          .testimonial-card .linkedin-container {
-              text-align: right;
-              margin-top: 10px; /* Adjust as needed */
-          }
-          }
-        `}</style>
       </div>
+      <div className="arrow right-arrow" onClick={nextSlide}>
+        &gt; {/* Right arrow */}
+      </div>
+
+
+      <style jsx>{`        
+        .arrow {
+          font-size: 24px;
+          cursor: pointer;
+          background-color: #f2f2f2;
+          border-radius: 50%;
+          padding: 10px;
+          margin: 0 10px;
+          transition: background-color 0.3s ease;
+        }
+        .left-arrow {
+          transform: rotate(360deg); /* Rotate left arrow */
+        }
+        .arrow:hover {
+          background-color: #ddd;
+        }
+        .testimonial-card {
+          float: left;
+          width: 100%;
+          min-height: 400px;
+          background-color: #1a4a9c;
+          border-radius: 8px;
+          padding-top: 100px;
+          padding-bottom: 50px;
+          padding-left: 50px;
+          padding-right: 50px;
+          margin:20px          
+        }
+        .testimonial-card:hover {
+          transform: scale(1.05);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .testimonial-card.current {
+          transform: translateZ(0);
+          background-color: #1a4a9c; /* Color for the centered card */
+          color: white;
+          margin:20px
+        }
+        img {
+          float: left;
+          width: 150px;
+          border-radius: 100%;
+          margin-top: -180px;
+          margin-left: 10px;
+        }
+        .previous,
+        .next {
+          opacity: 0.4;
+          color: white; /* Adjust the transparency of the side cards */
+        }
+        
+        .carousel-container {
+          display: flex;
+          justify-content: space-between;
+          width: 80%;
+          perspective: 1000px;
+          position: relative;
+          margin: auto;
+        }
+      `}</style>
     </div>
   );
 };
+  
 
 export default TestimonialCarousel;

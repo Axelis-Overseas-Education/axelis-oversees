@@ -10,12 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
-    background: linear-gradient(rgba(211, 225, 229, 0.5), rgba(202, 217, 225, 0.5)), url("/images/workwithusland.jpg");
-    background-color: rgba(0, 0, 0, 0.5);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center;
+    margin-bottom: 10px;
   }
 
   .headSummary {
@@ -34,15 +29,60 @@
     font-weight: 400;
   }
 
+  .WorkCultureHead {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:500;
+  }
+
+  .WorkSummary {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-family: system-ui;
+    font-weight:300;
+    margin-top:10px;
+    margin-bottom:0px
+  }
+
+  
+  .teams {
+    padding: 40px 0;
+    margin:5px
+  }
+
+  .teamCards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  .teamCards div {
+    flex: 1;
+    text-align: center;
+  }
+
+  .memberImage {
+    margin-bottom: 10px;
+  }
+
   .whyus {
     background-color: #3498db;
     color: #fff;
     padding: 40px;
+    margin-bottom:-15px;
   }
   
   .whyus h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: system-ui;
   }
   
   .whyus p {
@@ -56,6 +96,7 @@
     font-size: xx-large;
     font-family: system-ui;
     font-weight:500;
+    margin-bottom:50px;
   }
 
 .culture {
@@ -88,54 +129,10 @@
     color: #555;
   }
 
-.animatedHelicopter {
-    font-size: 8rem;
-    position: absolute;
-    top: 20%;
-    left: -60px;
-    transform: translateY(-50%);
-    animation: fly 4s linear infinite, rotateBlades 5s linear infinite;
+  .whyWithUs {
+    margin-top:-25px;
   }
   
-  @keyframes fly {
-    to {
-      transform: translateX(100vw);
-    }
+  .shareCv {
+    margin-top:15px;
   }
-  
-  @keyframes rotateBlades {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-.attractiveBanner {
-    font-size: 1.5rem;
-    background-color: #ce501e;
-    color: #fff;
-    padding: 20px;
-    margin-left:-20px;
-    transform: translateY(-100%);
-    animation: float 5s ease-in-out infinite, pulse 1s infinite;
-    border-radius: 5px;
-  }
-  
-  @keyframes float {
-    0%, 100% {
-      transform: translateX(-50px);
-    }
-    50% {
-      transform: translateX(50px);
-    }
-  }
-  
-  @keyframes pulse {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-  }
-  
-  

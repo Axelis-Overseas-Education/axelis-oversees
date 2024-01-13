@@ -1,9 +1,27 @@
+'use client'
 import Head from 'next/head';
 import styles from './workwithus.module.css'
-import React from 'react';
+import React, {useEffect} from 'react';
 
 
 const WorkWithUs = () => {
+
+
+  const workPartners = [
+      {
+        image: '/images/office1.jpg',
+        name: 'office1'
+      },
+      {
+        image: '/images/office2.jpg',
+        name: 'office2'
+      },
+      {
+        image: '/images/office3.jpg',
+        name: 'office3'
+      }
+    // Add similar objects for the remaining culture items
+  ];
 
     const cultureItems = [
         {
@@ -42,14 +60,27 @@ const WorkWithUs = () => {
       </Head>
       <section className={styles.landmarkPage}>
       <header className={styles.headSummary}>
-        <h1>"Discover endless opportunities and enrich your life by venturing abroad with Axelis Overseas."</h1>
+        <h1>Discover endless opportunities and enrich your life by venturing abroad with Axelis Overseas</h1>
       </header>
+        <div className={styles.workWithUsSummary}>
+          <img src="/gif/workWithBackground.gif" alt="Flag 1" className={styles.flag} />
+        </div>
           <div className={styles.landIntro}>
             <div className={styles.introDescription}>
-              
             </div>
           </div>
         </section>
+        <div className={styles.WorkCultureHead}>Life @ Axelis OverSeas</div>
+        <h1 className={styles.WorkSummary}>"Embrace dedication, celebrate even more at Axelis OverSeas."</h1>
+        <section className={styles.teams}>
+        <div className={styles.teamCards}>
+        {workPartners.map((item, index) => (
+          <div key={index} >
+            <h3><img src={item.image} alt={item.name} className={styles.memberImage} /></h3>
+          </div>
+        ))}
+        </div>
+      </section>
         <div className={styles.WorkCulture}>Why Choose Axelis as Your Workplace?</div>
         <section className={styles.culture}>
       <div className={styles.cultureGrid}>
@@ -63,14 +94,13 @@ const WorkWithUs = () => {
     </section>
 
       <section className={styles.whyus}>
-        <h2>Why Work With Us?</h2>
+        <h2 className={styles.whyWithUs}>Why Work With Us?</h2>
         <p>
           Join our team and be part of a company that values your skills, encourages growth, and fosters a positive
           working environment. We are committed to excellence and believe in the potential of every individual to make a
-          difference.
-        </p>
+          difference. </p>
+        <h1 className={'styles.shareCv'}>Please share your CV with axelisoverseas@overseeducation.com and we would be delighted to know more about you.</h1>
       </section>
-      <div className={styles.animatedHelicopter}>🚁<span className={styles.attractiveBanner}>Overseas Education</span></div>
     </div>
     
   );

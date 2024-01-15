@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && jscrambler",
     "start": "next start",
     "lint": "next lint"
   },
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10",
+    "jscrambler": "^6.4.21",
     "postcss": "^8",
     "tailwindcss": "^3"
   }

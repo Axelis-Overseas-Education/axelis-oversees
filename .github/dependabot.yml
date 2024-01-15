@@ -21,15 +21,6 @@ updates:
     # Add assignees
     assignees:
       - "sidbank"
-
-  # Maintain dependencies for Composer
-  - package-ecosystem: "composer"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    # Add assignees
-    assignees:
-      - "joyfreaky"
   # maintain dependencies for docker
   - package-ecosystem: "docker"
     directory: "/"

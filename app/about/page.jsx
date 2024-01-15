@@ -224,7 +224,7 @@ const AboutUs = () => {
       <h3>{member.name}</h3>
       <div className={styles.roleBorder}></div>
       <p>{member.role}</p>
-      <a href={member.href} target="_blank"><FaLinkedin size={30}/></a>
+      <a href={member.href} target="_blank" rel="noopener noreferrer"><FaLinkedin size={30}/></a>
     </div>
         ))}
       </div>

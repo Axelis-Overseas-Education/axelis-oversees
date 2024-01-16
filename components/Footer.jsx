@@ -65,16 +65,16 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h6 className="font-medium text-gray-400">Study Abroad</h6>
+            <h6 className="font-large text-gray-400">Study Abroad</h6>
             <ul>
-              <li className="py-2 text-sm">USA</li>
-              <li className="py-2 text-sm">Netherlands</li>
-              <li className="py-2 text-sm">Ireland</li>
-              <li className="py-2 text-sm">AUSTRALIA</li>
-              <li className="py-2 text-sm">CANADA</li>
-              <li className="py-2 text-sm">JAPAN</li>
-              <li className="py-2 text-sm">Singapore</li>
-              <li className="py-2 text-sm">UK</li>
+            <Link href="/pdf" as={`/pdf/${"usa.pdf"}`}><li className="py-2 text-sm">USA</li></Link>
+            <Link href="/pdf" as={`/pdf/${"netherlands.pdf"}`}><li className="py-2 text-sm">Netherlands</li></Link>
+            <Link href="/pdf" as={`/pdf/${"ireland.pdf"}`}><li className="py-2 text-sm">Ireland</li></Link>
+            <Link href="/pdf" as={`/pdf/${"australia.pdf"}`}><li className="py-2 text-sm">Australia</li></Link>
+            <Link href="/pdf" as={`/pdf/${"canada.pdf"}`}><li className="py-2 text-sm">Canada</li></Link>
+            {/* <Link href="/pdf" as={`/pdf/${"japan.pdf"}`}><li className="py-2 text-sm">JAPAN</li></Link> */}
+            <Link href="/pdf" as={`/pdf/${"singapore.pdf"}`}><li className="py-2 text-sm">Singapore</li></Link>
+            <Link href="/pdf" as={`/pdf/${"uk.pdf"}`}><li className="py-2 text-sm">UK</li></Link>
             </ul>
           </div>
           <div>

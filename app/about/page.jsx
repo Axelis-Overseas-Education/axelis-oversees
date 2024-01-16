@@ -198,7 +198,7 @@ const AboutUs = () => {
     </li>
     <li>
       <div>
-        <i className="fas fa-handshake"></i>
+        <i className=""></i>
         <GiTakeMyMoney size={100}/>
         <h3>1600+ Scholarships Partners</h3>
         <p>Number of scholarships partners</p>

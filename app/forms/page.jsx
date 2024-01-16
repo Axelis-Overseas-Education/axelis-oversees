@@ -83,7 +83,7 @@ const RegisterhtmlForm = () => {
 
   return (
     <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-      <div className="bg-white py-8 px-6 shadow rounded-lg sm:px-10">
+      <div className="bg-white my-20 py-8 px-6 shadow rounded-lg sm:px-10">
         <form onSubmit={handleSubmit} className="mb-0 space-y-6" action="#" method="POST">
           <div>
             <label className="block text-sm font-medium text-gray-700">Full Name</label>

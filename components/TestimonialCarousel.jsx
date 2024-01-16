@@ -1,7 +1,7 @@
 // components/TestimonialCarousel.jsx
 "use client";
 import { useState } from "react";
-import { RiDoubleQuotesL , RiDoubleQuotesR } from "react-icons/ri";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const TestimonialCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -11,7 +11,7 @@ const TestimonialCarousel = () => {
       degree: "Masters in Business Strategy and Entrepreneurship",
       uni: "Cardiff University",
       review:
-        "I had the pleasure of working with Axelis Overseas Education Pvt Ltd when I was applying for my Masters in Business Strategy and Entrepreneurship at Cardiff University. They were extremely helpful and knowledgeable in guiding me through the entire process. From providing information about the course to helping me with my application, they were always available to answer my queries and provide me with the best advice. I would highly recommend Axelis Overseas Education Pvt Ltd to anyone looking for professional guidance and support when applying for higher education abroad.",
+        "Axelis Overseas Edu Pvt Ltd offered vital guidance for my Cardiff University Master's application. Comprehensive support, from course details to application, was exceptional. Accessible and expert advice throughout, I highly recommend Axelis for pursuing higher education abroad.",
       image: "/images/test/Siddhant_Babar.jpeg",
       href: "https://www.linkedin.com/in/siddhant-jaydip-babar-ba6553245",
     },
@@ -20,7 +20,7 @@ const TestimonialCarousel = () => {
       degree: "Masters in Strategic Marketing",
       uni: "Cardiff University",
       review:
-        "I am thrilled to share my incredible journey of pursuing a Master`s degree in Strategic Marketing at Cardiff University, all thanks to the exceptional support and guidance provided by Axelis Overseas Education Pvt Ltd. From the very first interaction with the consultants, I was impressed by their extensive portfolio of study programs spanning across 29 countries. Their in-depth knowledge about various universities and the range of undergraduate and postgraduate programs available helped me narrow down my options and choose the best fit for my academic goals.",
+        "Axelis Overseas Education Pvt Ltd played a vital role in achieving my Master's in Strategic Marketing at Cardiff University. Their consultants, knowledgeable about diverse global study programs, helped align my choices with academic goals. Axelis' comprehensive support significantly shaped my educational journey.",
       image: "/images/test/Diksha_Babbar.jpeg",
       href: "https://www.linkedin.com/in/dikshababbar/",
     },
@@ -29,7 +29,7 @@ const TestimonialCarousel = () => {
       degree: "Master of Science - MS, Electrical and Computer Engineering",
       uni: "Northeastern University",
       review:
-        "I had the privilege to be assisted by Axelis Overseas Education Pvt Ltd for my Master of Science in Electrical and computer engineering at Northeastern University. As an aspiring international student, I was overwhelmed with the entire study abroad process. However, Axelis stood out as a remarkable study abroad consultant that guided me seamlessly throughout the entire journey.",
+        "I was privileged to be assisted by Axelis Overseas Education Pvt Ltd for my Master's in Electrical and Computer Engineering at Northeastern University. As an aspiring international student, overwhelmed by the study abroad process, Axelis stood out as a remarkable consultant, seamlessly guiding me through the entire journey.",
       image: "/images/test/M_Vasundhara_Rao.png",
       href: "https://www.linkedin.com/in/vasundhara-rao/",
     },
@@ -38,7 +38,7 @@ const TestimonialCarousel = () => {
       degree: "Masters in Business Strategy and Entrepreneurship",
       uni: "Cardiff University",
       review:
-        "Working with Axelis Overseas has been fantastic for Neetesh's academic journey abroad. Rishabh Agrawal, who shares the entrepreneurial spirit, has been a great mentor and friend. The advice from him and the team has truly shaped my perspective. Axelis isn't just a consultancy; it's a supportive community for those aiming to excel in their studies. A big thank you for the positive experiences, and we're eagerly looking forward to what's ahead! ",
+        "Axelis Overseas, led by mentor Rishabh Agrawal, has been pivotal in Neetesh's academic journey abroad. More than a consultancy, it's a supportive community shaping perspectives for academic excellence. Grateful for positive experiences, eagerly anticipating the future!",
       image: "/images/test/neetesh-jain.jpg",
       linkedin: "https://www.linkedin.com/in/neeteshjain06/",
     },
@@ -47,7 +47,7 @@ const TestimonialCarousel = () => {
       degree: "Masters in Business Management",
       uni: "Cardiff University",
       review:
-        "I was quite sceptical while choosing between Germany and the UK while choosing for Masters. Axelis’s expertise helped me in choosing the perfect fit for my background and shaping my career trajectory.",
+        "Navigating the decision between Germany and the UK for my Master's was challenging. Axelis Overseas Education Pvt Ltd's expertise played a pivotal role in guiding me toward the ideal choice that aligned with my background and career aspirations. Their insights were invaluable in shaping my educational and professional trajectory.",
       image: "/images/test/abhinandan.jpeg",
       linkedin: "https://www.linkedin.com/in/abhinandan-katharwani/",
     },
@@ -56,7 +56,7 @@ const TestimonialCarousel = () => {
       degree: "Masters in Business Strategy and Entrepreneurship",
       uni: "Cardiff University",
       review:
-        " I personally know Rishabh, we are pals before a counsellor and client relationship. I was quite confused with the plethora of options I had considering my engineering background, however Axelis and their tools helped me realise my true inclination.",
+        "I personally know Rishabh; we share a friendship beyond the counselor-client relationship. Amidst confusion about my engineering background and numerous options, Axelis, along with their tools, played a pivotal role in helping me recognize my true inclination.",
       image: "/images/test/rudrank-verma.jpeg",
       linkedin: "https://www.linkedin.com/in/rudrank-v-758733223/",
     },
@@ -83,7 +83,7 @@ const TestimonialCarousel = () => {
       degree: "Masters of Multimedia Journalism",
       uni: "University Of Westminster",
       review:
-        "I highly recommend Axelis Overseas as study abroad consultants. With their extensive network of partner universities in 29 countries, they offer a wide range of options for students seeking to study abroad. What sets them apart is their commitment to providing exceptional service without any fees. They go above and beyond by offering comprehensive support, including housing assistance, visa counseling, employability counseling, part-time job assistance, and even guidance on securing loans. Axelis Overseas is truly dedicated to helping students achieve their dreams of studying abroad, and I wholeheartedly recommend their services.",
+        "I highly recommend Axelis Overseas for study abroad. With a vast network spanning 29 countries, they offer fee-free, comprehensive services, including housing, visa counseling, employability guidance, part-time job assistance, and loan advice. Axelis is dedicated to realizing students' dreams of studying abroad.",
       image: "/images/test/shivangi-sen.JPG",
       linkedin: "https://www.linkedin.com/in/shivangi-sen-8941771bb/",
     },
@@ -92,7 +92,7 @@ const TestimonialCarousel = () => {
       degree: "Bachelors in Accounting and Finance",
       uni: "Cardiff University",
       review:
-        "Axelis Overseas is an organisation that specialises in helping students pursue their dreams of studying abroad. They offer comprehensive services to ensure a smooth and hassle-free experience. From financial aid and part-time job assistance to visa support and career counselling, Axelis Overseas covers all aspects of studying abroad. What sets them apart is that they do not charge any fees, making education accessible to all. Their commitment to making studying abroad a reality is truly commendable.",
+        "Axelis Overseas specializes in realizing students' study abroad dreams, providing comprehensive and fee-free services for a seamless experience. From financial aid to part-time job assistance, visa support, and career counseling, Axelis covers all aspects, ensuring accessibility for all students. Their commitment to making studying abroad a reality is truly commendable.",
       image: "/images/test/ansh-sonchattra.jpg",
       linkedin: "https://www.linkedin.com/in/ansh-sonchhatra-895564246/",
     },
@@ -363,7 +363,7 @@ const TestimonialCarousel = () => {
     // </div>
     <div className="flex justify-center items-center my-24">
     <div className="arrow left-arrow" onClick={prevSlide}>
-      &lt; {/* Left arrow */}
+    <FaArrowLeft/> {/* Left arrow */}
     </div>
     <div className="carousel-container">
       <div className="testimonial-card previous">
@@ -457,7 +457,7 @@ const TestimonialCarousel = () => {
         </div>
       </div>
       <div className="arrow right-arrow" onClick={nextSlide}>
-        &gt; {/* Right arrow */}
+        <FaArrowRight/> {/* Right arrow */}
       </div>
 
 
@@ -468,7 +468,7 @@ const TestimonialCarousel = () => {
           background-color: #f2f2f2;
           border-radius: 50%;
           padding: 10px;
-          margin: 0 10px;
+          margin: 0 50px;
           transition: background-color 0.3s ease;
         }
         .left-arrow {

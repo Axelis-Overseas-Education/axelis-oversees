@@ -70,7 +70,7 @@ const WorkWithUs = () => {
             </div>
           </div>
         </section>
-        <div className={styles.WorkCultureHead}>Life @ Axelis OverSeas</div>
+        <div className={styles.WorkCultureHead}>Life @ Axelis Overseas</div>
         <h1 className={styles.WorkSummary}>"Embrace dedication, celebrate even more at Axelis OverSeas."</h1>
         <section className={styles.teams}>
         <div className={styles.teamCards}>
@@ -81,7 +81,7 @@ const WorkWithUs = () => {
         ))}
         </div>
       </section>
-        <div className={styles.WorkCulture}>Why Choose Axelis as Your Workplace?</div>
+        <div className={styles.WorkCulture}>Why Choose Axelis Overseas as Your Workplace?</div>
         <section className={styles.culture}>
       <div className={styles.cultureGrid}>
         {cultureItems.map((item, index) => (

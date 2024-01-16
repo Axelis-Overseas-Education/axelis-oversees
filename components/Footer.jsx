@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaFacebookSquare, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebookSquare, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -10,12 +9,18 @@ const Footer = () => {
         <div>
           <img className="w-[50%]" src="/images/axelis_footer.png" alt="/" />
           {/* <h1 className='w-full text-3xl font-bold text-[#00df9a]'>Axelis Overseas Education Pvt. Ltd.</h1> */}
-          <p className="py-4">
+          {/* <p className="py-4">
             <span>Address: </span> <br />
             B20, VRINDAVAN PLAZA,
             <br />
             NEHRU CHOWK, BILASPUR (C.G.)
-          </p>
+          </p> */}
+          <div style={{ textDecoration: "none", overflow: "hidden", maxWidth: "100%", width: "400px", height: "40%" }}>
+            <div id="google-maps-display" style={{ height: "100%", width: "100%", maxWidth: "100%" }}>
+              <iframe style={{ height: "100%", width: "100%" }} src="https://www.google.com/maps/embed/v1/place?q=Axelis+Overseas+Education+Pvt+Ltd,+Nehru+Chowk,+Bilaspur,+Chhattisgarh,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" />
+            </div>
+          </div>
+          <br />
           <p>
             <span>Phone :</span>
             <br />
@@ -34,6 +39,7 @@ const Footer = () => {
             <a href={'https://www.instagram.com/axelis_overseas?igsh=Nnhvcm9xZmo3MDYw&utm_source=qr'} target="_blank" rel="noopener noreferrer"><FaInstagram size={30} /></a>
             {/* <FaXTwitter size={30} /> */}
             <a href={'https://www.linkedin.com/company/axelis-overseas-education-pvt-ltd/'} target="_blank" rel="noopener noreferrer"><FaLinkedin size={30} /></a>
+            <a href={'https://wa.me/message/CBEDYXA6Z3JVP1'} target="_blank" rel="noopener noreferrer"><FaWhatsapp size={30} /></a>
             {/* <FaDribbbleSquare size={30} /> */}
           </div>
         </div>
@@ -46,8 +52,8 @@ const Footer = () => {
               </Link>
               {/* <li className='py-2 text-sm'>Work with us/ Partner with us</li>
             <li className='py-2 text-sm'>(Alumni)</li> */}
-            <Link href="/workWithUs">
-              <li className="py-2 text-sm">Work with us</li>
+              <Link href="/workWithUs">
+                <li className="py-2 text-sm">Work with us</li>
               </Link>
             </ul>
           </div>
@@ -67,14 +73,14 @@ const Footer = () => {
           <div>
             <h6 className="font-large text-gray-400">Study Abroad</h6>
             <ul>
-            <Link href="/pdf" as={`/pdf/${"usa.pdf"}`}><li className="py-2 text-sm">USA</li></Link>
-            <Link href="/pdf" as={`/pdf/${"netherlands.pdf"}`}><li className="py-2 text-sm">Netherlands</li></Link>
-            <Link href="/pdf" as={`/pdf/${"ireland.pdf"}`}><li className="py-2 text-sm">Ireland</li></Link>
-            <Link href="/pdf" as={`/pdf/${"australia.pdf"}`}><li className="py-2 text-sm">Australia</li></Link>
-            <Link href="/pdf" as={`/pdf/${"canada.pdf"}`}><li className="py-2 text-sm">Canada</li></Link>
-            {/* <Link href="/pdf" as={`/pdf/${"japan.pdf"}`}><li className="py-2 text-sm">JAPAN</li></Link> */}
-            <Link href="/pdf" as={`/pdf/${"singapore.pdf"}`}><li className="py-2 text-sm">Singapore</li></Link>
-            <Link href="/pdf" as={`/pdf/${"uk.pdf"}`}><li className="py-2 text-sm">UK</li></Link>
+              <Link href="/pdf" as={`/pdf/${"usa.pdf"}`}><li className="py-2 text-sm">USA</li></Link>
+              <Link href="/pdf" as={`/pdf/${"netherlands.pdf"}`}><li className="py-2 text-sm">Netherlands</li></Link>
+              <Link href="/pdf" as={`/pdf/${"ireland.pdf"}`}><li className="py-2 text-sm">Ireland</li></Link>
+              <Link href="/pdf" as={`/pdf/${"australia.pdf"}`}><li className="py-2 text-sm">Australia</li></Link>
+              <Link href="/pdf" as={`/pdf/${"canada.pdf"}`}><li className="py-2 text-sm">Canada</li></Link>
+              {/* <Link href="/pdf" as={`/pdf/${"japan.pdf"}`}><li className="py-2 text-sm">JAPAN</li></Link> */}
+              <Link href="/pdf" as={`/pdf/${"singapore.pdf"}`}><li className="py-2 text-sm">Singapore</li></Link>
+              <Link href="/pdf" as={`/pdf/${"uk.pdf"}`}><li className="py-2 text-sm">UK</li></Link>
             </ul>
           </div>
           <div>
@@ -84,13 +90,13 @@ const Footer = () => {
                 <li className="py-2 text-sm">Part Time Job Assistance</li>
               </Link>
               <Link href="/housing-assistance">
-              <li className="py-2 text-sm">Housing Assistance</li>
+                <li className="py-2 text-sm">Housing Assistance</li>
               </Link>
               <Link href="/scholarShip">
-              <li className="py-2 text-sm">Scholarship (1600+)</li>
+                <li className="py-2 text-sm">Scholarship (1600+)</li>
               </Link>
               <Link href="/loans">
-              <li className="py-2 text-sm">15+ Loans partners</li>
+                <li className="py-2 text-sm">15+ Loans partners</li>
               </Link>
               {/* <li className="py-2 text-sm">For Universities</li> */}
             </ul>

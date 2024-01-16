@@ -107,7 +107,7 @@ const AboutUs = () => {
           <div className={styles.landIntro}>
             <h1 className={styles.introHeading}>Our Mission</h1>
             <div className={styles.introDescription}>
-              <h1>We are building</h1><span>the</span><span className={styles.highlight}> global citizens</span> of tomorrow
+              <h1 className='text-white'>We Oversee Your <br /> Overseas Journey</h1>
             </div>
             <div className={styles.flagImages}>
             <div className={styles.flagContainer}>

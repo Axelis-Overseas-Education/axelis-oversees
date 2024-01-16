@@ -10,8 +10,13 @@ function classNames(...classes) {
 
 const Navbar = () => {
   return (
-    <div className='w-full h-20 flex justify-between items-center px-8'>
-      <Link href={"/"}><img className="h-12 max-auto color-black hover:cursor-pointer" src="/images/logo_black.svg" alt="/" /></Link>
+    <>
+    <div className='fixed z-10 w-full flex justify-center items-center h-20 flex bg-gradient-to-r from-cyan-500 to-blue-500 text-white p-2'>        
+            <h1>Book a Free Counseling Session 🎉</h1>
+            <Link href={'/forms'} target='_blank'><button className='text-white bg-transparent border ml-[15px] pt-0 pb-0.5 px-2.5 rounded-[5px] border-solid border-white'>Book A Session</button></Link>
+    </div>
+    <div className='fixed z-10 w-full h-20 flex justify-between items-center px-8 text-white'>      
+      <Link href={"/"}><img className="h-16 max-auto color-black hover:cursor-pointer" src="/images/axelis_footer.png" alt="/" /></Link>
       <ul className='flex items-center'>      
         <li className='p-4'>
           <Menu as='div' className='relative inline-block text-left'>
@@ -424,6 +429,7 @@ const Navbar = () => {
         <li className='p-4'><Link href={'/about'} target='_blank'>About Us</Link></li>
       </ul>
     </div>
+    </>
   );
 };
 

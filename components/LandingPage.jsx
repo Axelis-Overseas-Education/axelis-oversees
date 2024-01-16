@@ -41,14 +41,18 @@ const LandingPage = () => {
 
   return (
     <div className="font-sans">
-      <section className="bg-gray-100 relative overflow-hidden w-full pb-[40%]">
+      <section className="bg-gray-100 relative overflow-hidden w-full pb-[46%]">
       <video src="video/home_page.mp4" type="video/mp4" autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover">
         {/* <source src="video/home_page.mp4" type="video/mp4" /> */}
         Your browser does not support the video tag.
       </video>
       {/* Your content on top of the video, e.g., text, buttons, etc. */}
-      <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-        <h1 className="text-4xl font-bold text-white">Your Title</h1>
+      <div className="absolute top-0 left-0 w-full h-full flex items-center">
+        <h1 className="text-4xl font-bold text-white">Oversee Your <br /> Overseas Journey
+        <br />
+        </h1>
+        <button className='rounded  font-bold p-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg text-white'>Get Started</button>
+        
       </div>
       </section>
 

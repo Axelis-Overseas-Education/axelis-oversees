@@ -71,7 +71,7 @@ const RegisterhtmlForm = () => {
 
       if (res.ok) {
         console.log("Success");
-        router.push('/');
+        router.push('https://calendly.com/axelisoverseas/counsellingsession');
       } else {
         throw new Error("Failed to create a Customer");
       }

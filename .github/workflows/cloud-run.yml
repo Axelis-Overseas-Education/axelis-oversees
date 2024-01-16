@@ -33,12 +33,12 @@ jobs:
 
       - name: Build and push the Docker image
         run: |-
-          gcloud builds submit --region $REGION --tag $REGION-docker.pkg.dev/$PROJECT_ID/$REPO_NAME:$GITHUB_SHA
+          gcloud builds submit --region $REGION --tag $REGION-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/$IMAGE_NAME:$GITHUB_SHA
 
       - name: Deploy
         run: |-
           gcloud run deploy $REPO_NAME \
           --region $REGION \
-          --image $REGION-docker.pkg.dev/$PROJECT_ID/$REPO_NAME:$GITHUB_SHA \
+          --image $REGION-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/$IMAGE_NAME:$GITHUB_SHA \
           --platform "managed" \
           --quiet

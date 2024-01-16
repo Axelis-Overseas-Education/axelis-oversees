@@ -100,9 +100,9 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-blue-500 text-white">
-        {/* Content */}
-      </section>
+      {/* <section className="py-16 bg-blue-500 text-white">
+        
+      </section> */}
     </div>
   );
 };

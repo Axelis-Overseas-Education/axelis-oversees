@@ -30,10 +30,10 @@ const Footer = () => {
             </Link>
           </p>
           <div className="flex justify-between md:w-[75%] my-6">
-            <FaFacebookSquare size={30} />
-            <FaInstagram size={30} />
-            <FaXTwitter size={30} />
-            <FaLinkedin size={30} />
+            <a href={'https://www.facebook.com/profile.php?id=61552129672233&mibextid=LQQJ4d'} target="_blank" rel="noopener noreferrer"><FaFacebookSquare size={30} /></a>
+            <a href={'https://www.instagram.com/axelis_overseas?igsh=Nnhvcm9xZmo3MDYw&utm_source=qr'} target="_blank" rel="noopener noreferrer"><FaInstagram size={30} /></a>
+            {/* <FaXTwitter size={30} /> */}
+            <a href={'https://www.linkedin.com/company/axelis-overseas-education-pvt-ltd/'} target="_blank" rel="noopener noreferrer"><FaLinkedin size={30} /></a>
             {/* <FaDribbbleSquare size={30} /> */}
           </div>
         </div>

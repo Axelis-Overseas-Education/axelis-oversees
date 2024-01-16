@@ -92,7 +92,7 @@ const Footer = () => {
               <Link href="/loans">
               <li className="py-2 text-sm">15+ Loans partners</li>
               </Link>
-              <li className="py-2 text-sm">For Universities</li>
+              {/* <li className="py-2 text-sm">For Universities</li> */}
             </ul>
           </div>
         </div>

@@ -1,9 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import RegisterForm from "./RegisterForm";
-import TestimonialCarousel from "./TestimonialCarousel";
-//import Offerings from "./Offerings";
 
 const LandingPage = () => {
   const [showWindow, setShowWindow] = useState(false);
@@ -22,62 +19,37 @@ const LandingPage = () => {
     {
       title: "Scholarship (1600+)",
       description: "Discover the best-fit universities for your career goals.",
-      link: "/scholarships",
+      link: "/scholarShip",
     },
     {
       title: "15+ Loans Partners",
       description:
         "Guidance and support throughout the visa application process.",
-      link: "/loan-partners",
+      link: "/loans",
     },
-    {
-      title: "Test Preparation",
-      description: "Prepare for standardized tests with our expert tutors.",
-      link: "/test-preparation",
-    },
-    {
-      title: "Visa Aid",
-      description: "Comprehensive visa assistance and guidance",
-      link: "/test-preparation",
-    },
+    // {
+    //   title: "Test Preparation",
+    //   description: "Prepare for standardized tests with our expert tutors.",
+    //   link: "/test-preparation",
+    // },
+    // {
+    //   title: "Visa Aid",
+    //   description: "Comprehensive visa assistance and guidance",
+    //   link: "/test-preparation",
+    // },
   ];
 
   return (
     <div className="font-sans">
-      <section className="bg-gray-100">
-      <div class="relative flex items-center bg-gray-400  justify-center h-screen overflow-hidden"> 
-        <video src= "video/home_page.mp4"
-            autoplay="{true}" loop muted 
-            className="absolute w-auto  
-            min-w-full min-h-full max-w-none"> 
-        </video> 
-        <div className="text-white w-full z-10 bg-[#ffffff30]">        
-        <div className="max-w-[800px] mt[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">            
-          {/* <p className="text-gray-200 font-bold p-2 uppercase md:text-6xl sm:text-6xl text-4xl">
-            Get Ready To Fly
-          </p>
-          <h1 className="md:text-6xl sm:text-6xl text-4xl font-bold md:py-6">
-          Your Study Abroad Expert
-          </h1>
-          <div className="flex justify-center items-center">
-            <p className="md:text-5xl sm:text-4xl text-xl font-bold">
-              NO 
-            </p>
-            {/* <Typed
-              className="md:text-5xl sm:text-4xl text-xl font-bold pl-3"
-              strings={[" CONSULTANCY FEES !"," HIDDEN FEES !"]}
-              typeSpeed={50}
-              backSpeed={50}
-              loop
-            /> 
-          </div> */}
-          <Link href={'/forms'}>
-          <button className="bg-[#0096FF] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-white">Enquire Now</button>          
-          </Link>
-        </div>                
-      </div>  
-        {/* <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 z-10 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2">Cyan to Blue</button> */}
-        </div>
+      <section className="bg-gray-100 relative overflow-hidden w-full pb-[40%]">
+      <video src="video/home_page.mp4" type="video/mp4" autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover">
+        {/* <source src="video/home_page.mp4" type="video/mp4" /> */}
+        Your browser does not support the video tag.
+      </video>
+      {/* Your content on top of the video, e.g., text, buttons, etc. */}
+      <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
+        <h1 className="text-4xl font-bold text-white">Your Title</h1>
+      </div>
       </section>
 
       <section className="py-16">
@@ -90,6 +62,7 @@ const LandingPage = () => {
                 <p>{service.description}</p>
                 <a
                   href={service.link}
+                  target="_blank"
                   className="block text-blue-500 mt-4 hover:underline"
                 >
                   Know More

@@ -97,6 +97,7 @@
     font-family: system-ui;
     font-weight:500;
     margin-bottom:50px;
+    text-shadow: 2px 12px 14px rgba(19, 19, 19, 0.3);
   }
 
 .culture {

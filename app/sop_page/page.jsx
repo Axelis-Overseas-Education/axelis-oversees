@@ -1,15 +1,19 @@
 import React from "react";
 import styles from "app/lor_page/lor.module.css";
+import Demo from '@/components/DemoBanner'
 
 const Sop = () => {
   return (
     <div>
+      <Demo page={"SOP"}/>
       <section className={styles.mainContent}>
         <article className={styles.articleDesign}>
           <div className={styles.lorHeading}>
             <div>
               <h2 className={styles.mainHeading}>
-                SOP (Statement of Purpose): Format, Samples, and Tips
+                SOP (Statement of Purpose): 
+                <br />
+                Format, Samples, and Tips
               </h2>
             </div>
             <div>
@@ -20,7 +24,7 @@ const Sop = () => {
               />
             </div>
           </div>
-          <p>
+          <p className="mt-8">
             To aesthetically present a movie on the screen, great actors are the
             requisites. Similar is the case when one is carving their own career
             path. From choosing the right course to getting into your dream

@@ -2,10 +2,12 @@
 
 import React from "react";
 import styles from "./lor.module.css";
+import Demo from '@/components/DemoBanner'
 
 const Lor = () => {
   return (
     <div className={styles.lorFont}>
+      <Demo page={"LOR"}/>
       <section className={styles.mainContent}>
         <article className={styles.articleDesign}>
           <div className={styles.lorHeading}>

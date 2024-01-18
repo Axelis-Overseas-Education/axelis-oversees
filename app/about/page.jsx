@@ -1,7 +1,7 @@
 'use client';
 import Head from 'next/head';
 import styles from './about.module.css';
-import React, {useState, useEffect} from 'react';
+import React, {useState, useRef} from 'react';
 import {  
   FaFacebookSquare,
   FaLinkedin,
@@ -134,6 +134,21 @@ const AboutUs = () => {
   const toggleFAQ = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const togglePlayPause = () => {
+    const video = videoRef.current;
+
+    if (isPlaying) {
+      video.pause();
+    } else {
+      video.play();
+    }
+
+    setIsPlaying(!isPlaying);
+  };
+
 
   return (
     <div>
@@ -195,15 +210,15 @@ const AboutUs = () => {
                   Ready to embark on your academic adventure? Connect with us at Axelis, and let's turn your dreams into reality!
                 </p>
         </div>
-        <div className={styles.video}>
-          {/* Insert your video component or embed code here */}
-          <iframe
-            width="230"
-            height="405"
-            src="/video/intro_axelis.mp4"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
+              <div className={styles.video}>
+                <video
+                  ref={videoRef}
+                  src="/video/intro_axelis.mp4"
+                  type="video/mp4"
+                  loop
+                  className="top-0 left-0 w-25 h-50 object-cover"
+                  onClick={togglePlayPause}
+                  />   
         </div>
       </div>
       {/* Rest of the content */}

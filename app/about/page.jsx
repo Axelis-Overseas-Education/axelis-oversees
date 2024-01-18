@@ -89,6 +89,18 @@ const AboutUs = () => {
       href: '',
     },
     {
+      name: 'Oshin Khandelwal',
+      role: 'Business Development Associate',
+      image: '/images/images/Oshin Khandelwal.jpg',
+      href: 'https://www.linkedin.com/in/oshin-khandelwal-083566a4',
+    },
+    {
+      name: 'Rubi Kumari',
+      role: 'Business Development Associate',
+      image: '/images/images/Rubi Kumari.jpg',
+      href: 'https://www.linkedin.com/in/rubi-kumari-77775021b',
+    },
+    {
       name: 'Jagrati Upadhyay',
       role: 'DevOps Intern',
       image: '/images/images/jagrati.jpg',

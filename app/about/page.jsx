@@ -23,48 +23,76 @@ const AboutUs = () => {
 
   const teamMembers = [
     {
-      name: 'John Doe',
-      role: 'Developer',
-      image: '/images/photo.jpg',
+      name: 'Rishabh Agrawal',
+      role: 'Founder',
+      image: '/images/images/Rishabh.png',
+      href: 'https://www.linkedin.com/in/rishabhagrawal1828',
+    },
+    {
+      name: 'John Daniel Oonnoonny',
+      role: 'Co-Founder',
+      image: '/images/images/John.jpg',
+      href:'https://www.linkedin.com/in/john-daniel-oonnoonny-7920b11bb'
+    },
+    {
+      name: 'Shristi Agrawal',
+      role: 'Creative Head',
+      image: '/images/images/Shristi Agrawal.jpeg',
+      href: 'https://www.linkedin.com/in/shristi-agrawal',
+    },
+    {
+      name: 'Joydip Bhowmick',
+      role: 'Head of Data Science & Analytics',
+      image: '/images/images/joy.jpeg',
+      href: 'https://www.linkedin.com/in/joydip-bhowmick-69363315b'
+    },
+    {
+      name: 'Harsh Singh',
+      role: 'Head of Business Development',
+      image: '/images/images/Harsh Singh.jpeg',
+      href: 'https://www.linkedin.com/in/harsh-singh-80b916169',
+    },
+    {
+      name: 'Saee Pushkar Konher',
+      role: 'Business Development Manager',
+      image: '/images/images/Saee.jpg',
+      href: 'https://www.linkedin.com/in/saee-konher-11ab60249',
+    },
+    {
+      name: 'Vishwa Priya Talari',
+      role: 'Operations Manager',
+      image: '/images/images/Vishwa Priya.jpg',
+      href: 'https://www.linkedin.com/in/talarivishwapriya',
+    },
+    {
+      name: 'Sidharth Bansal',
+      role: 'Software Developer',
+      image: '/images/images/Sidharth Bansal.jpeg',
+      href: 'https://www.linkedin.com/in/bansalsid31',
+    },
+    {
+      name: 'Shubham Raj',
+      role: 'Software Developer',
+      image: '/images/images/Shubham.jpg',
       href: 'https://www.linkedin.com/in/shubham-raj-2a32a317b',
     },
     {
-      name: 'Jane Smith',
-      role: 'Designer',
-      image: '/images/photo.jpg',
+      name: 'Vicky Kumar',
+      role: 'Software Developer',
+      image: '/images/images/vicky.jpg',
+      href: 'https://www.linkedin.com/in/vicky-kumar-raja',
     },
     {
-      name: 'John Doe',
-      role: 'Developer',
-      image: '/images/photo.jpg',
-      href: 'https://www.linkedin.com/in/shubham-raj-2a32a317b',
+      name: 'Neeraj Thombre',
+      role: 'Business Development Associate',
+      image: '/images/images/Neeraj.jpg',
+      href: '',
     },
     {
-      name: 'Jane Smith',
-      role: 'Designer',
-      image: '/images/photo.jpg',
-    },
-    {
-      name: 'John Doe',
-      role: 'Developer',
-      image: '/images/photo.jpg',
-      href: 'https://www.linkedin.com/in/shubham-raj-2a32a317b',
-    },
-    {
-      name: 'Jane Smith',
-      role: 'Designer',
-      image: '/images/photo.jpg',
-    },
-    {
-      name: 'John Doe',
-      role: 'Developer',
-      image: '/images/photo.jpg',
-      href: 'https://www.linkedin.com/in/shubham-raj-2a32a317b',
-    },
-    {
-      name: 'Jane Smith',
-      role: 'Designer',
-      image: '/images/photo.jpg',
+      name: 'Jagrati Upadhyay',
+      role: 'DevOps Intern',
+      image: '/images/images/jagrati.jpg',
+      href: 'https://www.linkedin.com/in/jagrati-upadhyay-079a16221/',
     },
 
   ];

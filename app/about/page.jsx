@@ -1,7 +1,7 @@
 'use client';
 import Head from 'next/head';
 import styles from './about.module.css';
-import React, {useState, useEffect} from 'react';
+import React, {useState, useRef} from 'react';
 import {  
   FaFacebookSquare,
   FaLinkedin,
@@ -23,48 +23,88 @@ const AboutUs = () => {
 
   const teamMembers = [
     {
-      name: 'John Doe',
-      role: 'Developer',
-      image: '/images/photo.jpg',
+      name: 'Rishabh Agrawal',
+      role: 'Founder',
+      image: '/images/images/Rishabh.png',
+      href: 'https://www.linkedin.com/in/rishabhagrawal1828',
+    },
+    {
+      name: 'John Daniel Oonnoonny',
+      role: 'Co-Founder',
+      image: '/images/images/John.jpg',
+      href:'https://www.linkedin.com/in/john-daniel-oonnoonny-7920b11bb'
+    },
+    {
+      name: 'Shristi Agrawal',
+      role: 'Creative Head',
+      image: '/images/images/Shristi Agrawal.jpeg',
+      href: 'https://www.linkedin.com/in/shristi-agrawal',
+    },
+    {
+      name: 'Joydip Bhowmick',
+      role: 'Head of Data Science & Analytics',
+      image: '/images/images/joy.jpeg',
+      href: 'https://www.linkedin.com/in/joydip-bhowmick-69363315b'
+    },
+    {
+      name: 'Harsh Singh',
+      role: 'Head of Business Development',
+      image: '/images/images/Harsh Singh.jpeg',
+      href: 'https://www.linkedin.com/in/harsh-singh-80b916169',
+    },
+    {
+      name: 'Saee Pushkar Konher',
+      role: 'Business Development Manager',
+      image: '/images/images/Saee.jpg',
+      href: 'https://www.linkedin.com/in/saee-konher-11ab60249',
+    },
+    {
+      name: 'Vishwa Priya Talari',
+      role: 'Operations Manager',
+      image: '/images/images/Vishwa Priya.jpg',
+      href: 'https://www.linkedin.com/in/talarivishwapriya',
+    },
+    {
+      name: 'Sidharth Bansal',
+      role: 'Software Developer',
+      image: '/images/images/Sidharth Bansal.jpeg',
+      href: 'https://www.linkedin.com/in/bansalsid31',
+    },
+    {
+      name: 'Shubham Raj',
+      role: 'Software Developer',
+      image: '/images/images/Shubham.jpg',
       href: 'https://www.linkedin.com/in/shubham-raj-2a32a317b',
     },
     {
-      name: 'Jane Smith',
-      role: 'Designer',
-      image: '/images/photo.jpg',
+      name: 'Vicky Kumar',
+      role: 'Software Developer',
+      image: '/images/images/vicky.jpg',
+      href: 'https://www.linkedin.com/in/vicky-kumar-raja',
     },
     {
-      name: 'John Doe',
-      role: 'Developer',
-      image: '/images/photo.jpg',
-      href: 'https://www.linkedin.com/in/shubham-raj-2a32a317b',
+      name: 'Neeraj Thombre',
+      role: 'Business Development Associate',
+      image: '/images/images/Neeraj.jpg',
+      href: '',
     },
     {
-      name: 'Jane Smith',
-      role: 'Designer',
-      image: '/images/photo.jpg',
+      name: 'Oshin Khandelwal',
+      role: 'Business Development Associate',
+      image: '/images/images/Oshin Khandelwal.jpg',
+      href: 'https://www.linkedin.com/in/oshin-khandelwal-083566a4',
     },
     {
-      name: 'John Doe',
-      role: 'Developer',
-      image: '/images/photo.jpg',
-      href: 'https://www.linkedin.com/in/shubham-raj-2a32a317b',
+      name: 'Rubi Kumari',
+      role: 'Business Development Associate',
+      image: '/images/images/Rubi Kumari.jpg',
+      href: 'https://www.linkedin.com/in/rubi-kumari-77775021b',
     },
     {
-      name: 'Jane Smith',
-      role: 'Designer',
-      image: '/images/photo.jpg',
-    },
-    {
-      name: 'John Doe',
-      role: 'Developer',
-      image: '/images/photo.jpg',
-      href: 'https://www.linkedin.com/in/shubham-raj-2a32a317b',
-    },
-    {
-      name: 'Jane Smith',
-      role: 'Designer',
-      image: '/images/photo.jpg',
+      name: 'Jagrati Upadhyay',
+      role: 'DevOps Intern',
+      image: '/images/images/jagrati.jpg',
+      href: 'https://www.linkedin.com/in/jagrati-upadhyay-079a16221/',
     },
 
   ];
@@ -94,6 +134,21 @@ const AboutUs = () => {
   const toggleFAQ = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const togglePlayPause = () => {
+    const video = videoRef.current;
+
+    if (isPlaying) {
+      video.pause();
+    } else {
+      video.play();
+    }
+
+    setIsPlaying(!isPlaying);
+  };
+
 
   return (
     <div>
@@ -107,7 +162,7 @@ const AboutUs = () => {
           <div className={styles.landIntro}>
             <h1 className={styles.introHeading}>Our Mission</h1>
             <div className={styles.introDescription}>
-              <h1>We are building</h1><span>the</span><span className={styles.highlight}> global citizens</span> of tomorrow
+              <h1 className='text-white'>We Oversee Your <br /> Overseas Journey</h1>
             </div>
             <div className={styles.flagImages}>
             <div className={styles.flagContainer}>
@@ -155,15 +210,15 @@ const AboutUs = () => {
                   Ready to embark on your academic adventure? Connect with us at Axelis, and let's turn your dreams into reality!
                 </p>
         </div>
-        <div className={styles.video}>
-          {/* Insert your video component or embed code here */}
-          <iframe
-            width="230"
-            height="405"
-            src="/video/intro_axelis.mp4"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
+              <div className={styles.video}>
+                <video
+                  ref={videoRef}
+                  src="/video/intro_axelis.mp4"
+                  type="video/mp4"
+                  loop
+                  className="top-0 left-0 w-25 h-50 object-cover"
+                  onClick={togglePlayPause}
+                  />   
         </div>
       </div>
       {/* Rest of the content */}

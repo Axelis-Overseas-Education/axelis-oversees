@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
-    margin-top: 70px;
+    margin-bottom: 50px;    
+    padding-top: 60px;
     background: linear-gradient(rgba(211, 225, 229, 0.5), rgba(202, 217, 225, 0.5)), url("/gif/landmark.gif");
     background-color: rgba(0, 0, 0, 0.5);
     background-size: 100% auto;
@@ -17,8 +17,7 @@
     background-size: 100% auto;
   }
 
-  .introHeading {
-    color: #0487f3;
+  .introHeading {    
     font-size: x-large;
   }
 
@@ -37,6 +36,11 @@
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
+  }
+
+  .video {
+    height:100px;
+    width:300px;
   }
   
   .introVideo {
@@ -163,12 +167,14 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 40px;
+  margin-bottom: 240px;
 }
 
 .introduction {
   flex: 1;
   margin-right: 20px;
+  line-height: 2.5rem;
+  font-weight: 500;
 }
 
 .introduction h3 {

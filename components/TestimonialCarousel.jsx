@@ -112,7 +112,7 @@ const TestimonialCarousel = () => {
   return (
     <div>
       <div className="flex justify-center">
-      <h1 className="text-[#1a4a9c] text-2xl font-bold">Customer's Say </h1>
+      <h1 className="text-[#1a4a9c] text-2xl font-bold">Sucess Stories</h1>
       </div>
     <div className="flex justify-center items-center my-24">
       

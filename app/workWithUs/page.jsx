@@ -25,7 +25,7 @@ const WorkWithUs = () => {
 
     const cultureItems = [
         {
-          title: 'Embark on a Continuous hu Learning Journey:',
+          title: 'Embark on a Continuous Learning Journey:',
           description: 'At Axelis, we encourage you to wear multiple hats, fostering a dynamic learning curve. Embrace challenges, learn from mistakes, and collectively grow as a team.',
         },
 
@@ -43,7 +43,7 @@ const WorkWithUs = () => {
           },
           {
             title: 'Encouraging an Experimental Mindset:',
-            description: 'Explore beyond your usual domain. Axelis promotes an experimenting attitude, allowing you to delve into projects that spark your interest and broaden your skill set.',
+            description: 'Explore beyond your usual domain. Axelis promotes an experimenting attitude, allowing you to involve into projects that spark your interest and broaden your skill set.',
           },
           {
             title: 'Work with Young and Enthusiastic Professionals:',
@@ -97,8 +97,8 @@ const WorkWithUs = () => {
         <h2 className={styles.whyWithUs}>Why Work With Us?</h2>
         <p>
           Join our team and be part of a company that values your skills, encourages growth, and fosters a positive
-          working environment. We are committed to excellence and believe in the potential of every individual to make a
-          difference. </p>
+          working environment. We're committed to excellence and believe in the potential of every individual to make a
+          difference. </p><br />
         <h1 className={'styles.shareCv'}>Please share your CV with axelisoverseas@overseeducation.com and we would be delighted to know more about you.</h1>
       </section>
     </div>

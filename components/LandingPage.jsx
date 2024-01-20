@@ -48,7 +48,7 @@ const LandingPage = () => {
       </video>
       {/* Your content on top of the video, e.g., text, buttons, etc. */}
       <div className="absolute top-0 left-0 w-full h-full flex items-center">
-        <h1 className="text-4xl font-bold text-white">Oversee Your <br /> Overseas Journey
+        <h1 className="text-4xl font-bold text-white">We Oversee Your <br /> Overseas Journey
         <br />
         </h1>
         <button className='rounded  font-bold p-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg text-white'>Get Started</button>
@@ -57,9 +57,9 @@ const LandingPage = () => {
       </section>
 
       <section className="py-16">
-        <div className="container mx-auto px-8">
+        <div className="container mx-auto px-8" >
           <h2 className="text-3xl font-bold mb-8">Our Offerings</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-6" >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6" >
             {services.map((service, index) => (
               <div key={index} className="bg-white p-6 rounded-md shadow-md">
                 <h3 className="text-xl font-semibold mb-2">{service.title}</h3>

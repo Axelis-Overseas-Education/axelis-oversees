@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className='fixed z-10 w-full h-20 flex justify-between items-center px-8 text-white'>      
       <Link href={"/"}><img className="h-16 max-auto color-black hover:cursor-pointer" src="/images/axelis_footer.png" alt="/" /></Link>
       <ul className='flex items-center'>      
-        <li className='p-4'>
+        <li className='p-4 hover:border-b-2 border-black'>
           <Menu as='div' className='relative inline-block text-left'>
             <Menu.Button>Offerings</Menu.Button>
             <Transition
@@ -97,7 +97,7 @@ const Navbar = () => {
             </Transition>
           </Menu>
         </li>        
-        <li className='p-4'>
+        <li className='p-4 hover:border-b-2 border-black'>
           <Menu as='div' className='relative inline-block text-left'>
             <Menu.Button>Study Abroad</Menu.Button>
             <Transition
@@ -236,7 +236,7 @@ const Navbar = () => {
             </Transition>
           </Menu>
         </li>        
-        <li className='p-4'>
+        <li className='p-4 hover:border-b-2 border-black'>
           <Menu as='div' className='relative inline-block text-left'>
             <Menu.Button>Resources</Menu.Button>
             <Transition
@@ -426,7 +426,7 @@ const Navbar = () => {
             </Transition>
           </Menu>
         </li> */}
-        <li className='p-4'><Link href={'/about'} target='_blank'>About Us</Link></li>
+        <li className='p-4 hover:border-b-2 border-black'><Link href={'/about'} target='_blank'>About Us</Link></li>
       </ul>
     </div>
     </>

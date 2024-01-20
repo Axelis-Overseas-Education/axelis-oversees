@@ -7,13 +7,13 @@ const TestimonialCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const testimonials = [
     {
-      name: "Siddhant Babar",
-      degree: "Masters in Business Strategy and Entrepreneurship",
-      uni: "Cardiff University",
+      name: "Arnab Chakravorty",
+      degree: "Masters in Health Psychology",
+      uni: "University Of Nottingham",
       review:
-        "Axelis Overseas Edu Pvt Ltd offered vital guidance for my Cardiff University Master's application. Comprehensive support, from course details to application, was exceptional. Accessible and expert advice throughout, I highly recommend Axelis for pursuing higher education abroad.",
-      image: "/images/test/Siddhant_Babar.jpeg",
-      href: "https://www.linkedin.com/in/siddhant-jaydip-babar-ba6553245",
+        " I extend my gratitude to Rishabh and your team for guiding me in choosing psychology studies. Unsure whether to pursue it in India or abroad, your expert advice was invaluable. Thanks for making my decision clearer.",
+      image: "/images/test/arnab-chakravorty.jpg",
+      linkedin: "https://www.linkedin.com/in/arnab-chakravorty/",
     },
     {
       name: "Diksha Babbar",
@@ -32,6 +32,15 @@ const TestimonialCarousel = () => {
         "I was privileged to be assisted by Axelis Overseas Education Pvt Ltd for my Master's in Electrical and Computer Engineering at Northeastern University. As an aspiring international student, overwhelmed by the study abroad process, Axelis stood out as a remarkable consultant, seamlessly guiding me through the entire journey.",
       image: "/images/test/M_Vasundhara_Rao.png",
       href: "https://www.linkedin.com/in/vasundhara-rao/",
+    },
+    {
+      name: "Siddhant Babar",
+      degree: "Masters in Business Strategy and Entrepreneurship",
+      uni: "Cardiff University",
+      review:
+        "Axelis Overseas Edu Pvt Ltd offered vital guidance for my Cardiff University Master's application. Comprehensive support, from course details to application, was exceptional. Accessible and expert advice throughout, I highly recommend Axelis for pursuing higher education abroad.",
+      image: "/images/test/Siddhant_Babar.jpeg",
+      href: "https://www.linkedin.com/in/siddhant-jaydip-babar-ba6553245",
     },
     {
       name: "Neetesh Jain",
@@ -59,15 +68,6 @@ const TestimonialCarousel = () => {
         "I personally know Rishabh; we share a friendship beyond the counselor-client relationship. Amidst confusion about my engineering background and numerous options, Axelis, along with their tools, played a pivotal role in helping me recognize my true inclination.",
       image: "/images/test/rudrank-verma.jpeg",
       linkedin: "https://www.linkedin.com/in/rudrank-v-758733223/",
-    },
-    {
-      name: "Arnab Chakravorty",
-      degree: "Masters in Health Psychology",
-      uni: "University Of Nottingham",
-      review:
-        " I extend my gratitude to Rishabh and your team for guiding me in choosing psychology studies. Unsure whether to pursue it in India or abroad, your expert advice was invaluable. Thanks for making my decision clearer.",
-      image: "/images/test/arnab-chakravorty.jpg",
-      linkedin: "https://www.linkedin.com/in/arnab-chakravorty/",
     },
     {
       name: "Palak Shah",

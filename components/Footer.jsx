@@ -21,6 +21,7 @@ const Footer = () => {
             </div>
           </div>
           <br />
+          <p><span>Address :</span><br /> B20, Vrindawan Plaza, Bilaspur, C.G., 495001</p><br />
           <p>
             <span>Phone :</span>
             <br />
@@ -48,12 +49,12 @@ const Footer = () => {
             <h6 className="font-medium text-gray-400">About Axelis Overseas</h6>
             <ul>
               <Link href="/about">
-                <li className="py-2 text-sm">About us</li>
+                <li className="py-2 text-sm hover:border-b-2 border-white">About us</li>
               </Link>
               {/* <li className='py-2 text-sm'>Work with us/ Partner with us</li>
             <li className='py-2 text-sm'>(Alumni)</li> */}
               <Link href="/workWithUs">
-                <li className="py-2 text-sm">Work with us</li>
+                <li className="py-2 text-sm hover:border-b-2 border-white">Work with us</li>
               </Link>
             </ul>
           </div>
@@ -61,10 +62,10 @@ const Footer = () => {
             <h6 className="font-medium text-gray-400">Resources</h6>
             <ul>
               <Link href="/lor_page">
-                <li className="py-2 text-sm">LOR</li>
+                <li className="py-2 text-sm hover:border-b-2 border-white">LOR</li>
               </Link>
               <Link href="/sop_page">
-                <li className="py-2 text-sm">SOP</li>
+                <li className="py-2 text-sm hover:border-b-2 border-white">SOP</li>
               </Link>
               {/* <li className='py-2 text-sm'>IELTS Prep Crash Course / TOEFL</li> */}
               {/* <li className='py-2 text-sm'>API Status</li> */}
@@ -73,30 +74,30 @@ const Footer = () => {
           <div>
             <h6 className="font-large text-gray-400">Study Abroad</h6>
             <ul>
-              <Link href="/pdf" as={`/pdf/${"usa.pdf"}`}><li className="py-2 text-sm">USA</li></Link>
-              <Link href="/pdf" as={`/pdf/${"netherlands.pdf"}`}><li className="py-2 text-sm">Netherlands</li></Link>
-              <Link href="/pdf" as={`/pdf/${"ireland.pdf"}`}><li className="py-2 text-sm">Ireland</li></Link>
-              <Link href="/pdf" as={`/pdf/${"australia.pdf"}`}><li className="py-2 text-sm">Australia</li></Link>
-              <Link href="/pdf" as={`/pdf/${"canada.pdf"}`}><li className="py-2 text-sm">Canada</li></Link>
+              <Link href="/pdf" as={`/pdf/${"usa.pdf"}`}><li className="py-2 text-sm hover:border-b-2 border-white">USA</li></Link>
+              <Link href="/pdf" as={`/pdf/${"netherlands.pdf"}`}><li className="py-2 text-sm hover:border-b-2 border-white">Netherlands</li></Link>
+              <Link href="/pdf" as={`/pdf/${"ireland.pdf"}`}><li className="py-2 text-sm hover:border-b-2 border-white">Ireland</li></Link>
+              <Link href="/pdf" as={`/pdf/${"australia.pdf"}`}><li className="py-2 text-sm hover:border-b-2 border-white">Australia</li></Link>
+              <Link href="/pdf" as={`/pdf/${"canada.pdf"}`}><li className="py-2 text-sm hover:border-b-2 border-white">Canada</li></Link>
               {/* <Link href="/pdf" as={`/pdf/${"japan.pdf"}`}><li className="py-2 text-sm">JAPAN</li></Link> */}
-              <Link href="/pdf" as={`/pdf/${"singapore.pdf"}`}><li className="py-2 text-sm">Singapore</li></Link>
-              <Link href="/pdf" as={`/pdf/${"uk.pdf"}`}><li className="py-2 text-sm">UK</li></Link>
+              <Link href="/pdf" as={`/pdf/${"singapore.pdf"}`}><li className="py-2 text-sm hover:border-b-2 border-white">Singapore</li></Link>
+              <Link href="/pdf" as={`/pdf/${"uk.pdf"}`}><li className="py-2 text-sm hover:border-b-2 border-white">UK</li></Link>
             </ul>
           </div>
           <div>
             <h6 className="font-medium text-gray-400">Offerings</h6>
             <ul>
               <Link href="/part-time-job-assistance">
-                <li className="py-2 text-sm">Part Time Job Assistance</li>
+                <li className="py-2 text-sm hover:border-b-2 border-white">Part Time Job Assistance</li>
               </Link>
               <Link href="/housing-assistance">
-                <li className="py-2 text-sm">Housing Assistance</li>
+                <li className="py-2 text-sm hover:border-b-2 border-white">Housing Assistance</li>
               </Link>
               <Link href="/scholarShip">
-                <li className="py-2 text-sm">Scholarship (1600+)</li>
+                <li className="py-2 text-sm hover:border-b-2 border-white">Scholarship (1600+)</li>
               </Link>
               <Link href="/loans">
-                <li className="py-2 text-sm">15+ Loans partners</li>
+                <li className="py-2 text-sm hover:border-b-2 border-white">15+ Loans partners</li>
               </Link>
               {/* <li className="py-2 text-sm">For Universities</li> */}
             </ul>

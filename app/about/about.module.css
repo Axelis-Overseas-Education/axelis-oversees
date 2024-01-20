@@ -370,3 +370,8 @@
   border-bottom: 1px solid #eb3939;
   margin-bottom: 15px;
 }
+
+.moreButton {
+  display:flex;
+  justify-content:center;
+}

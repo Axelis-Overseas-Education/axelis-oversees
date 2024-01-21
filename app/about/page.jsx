@@ -12,13 +12,6 @@ import { FaGlobeAmericas } from "react-icons/fa";
 import { FaPeopleRoof } from "react-icons/fa6";
 import { GiTakeMyMoney } from "react-icons/gi";
 
-
-
-
-
-
-
-
 const AboutUs = () => {
 
   const teamMembers = [

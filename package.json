@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10",
-    "jscrambler": "^6.4.21",
+    "jscrambler": "^6.4.28",
     "postcss": "^8",
     "tailwindcss": "^3"
   }

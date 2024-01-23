@@ -4,7 +4,9 @@ const Loan = () => {
   const loanMatchingCaptainSection = (
     <section className="py-16">
       <div className="container mx-auto px-8">
-        <h2 className="text-3xl font-bold mb-8">Axelis Overseas: Your Loan-Matching Captain</h2>
+        <h2 className="text-3xl font-bold mb-8">
+          Axelis Overseas: Your Loan-Matching Captain
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-6">
           <div className="bg-white p-6 rounded-md shadow-md">
             <p className="font-bold text-xl">Demystifying paperwork</p>
@@ -12,7 +14,9 @@ const Loan = () => {
           </div>
           <div className="bg-white p-6 rounded-md shadow-md">
             <p className="font-bold text-xl">Expert guidance</p>
-            <p>We assess your profile and connect you with the perfect lender</p>
+            <p>
+              We assess your profile and connect you with the perfect lender
+            </p>
           </div>
           <div className="bg-white p-6 rounded-md shadow-md">
             <p className="font-bold text-xl">Negotiation ninjas</p>
@@ -64,10 +68,10 @@ const Loan = () => {
                 />
                 <h2 className={styles.heading2}></h2>
                 <p>Widest network</p>
-                <p>competitive rates</p>
-                <p>flexible repayment options</p>
+                <p>Competitive rates</p>
+                <p>Flexible repayment options</p>
                 <p>Ideal for: Stability</p>
-                <p>government backing</p>
+                <p>Government backing</p>
               </div>
             </li>
             <li>
@@ -79,9 +83,9 @@ const Loan = () => {
                 />
                 <h2 className={styles.heading2}></h2>
                 <p>Attractive interest rates</p>
-                <p>customizable plans</p>
-                <p>deal for: Competitive terms</p>
-                <p>personalization</p>
+                <p>Customizable plans</p>
+                <p>Ideal for: Competitive terms</p>
+                <p>Personalization</p>
               </div>
             </li>
             <li>
@@ -93,9 +97,85 @@ const Loan = () => {
                 />
                 <h2 className={styles.heading2}></h2>
                 <p>Varied loan schemes</p>
-                <p>transparent processes</p>
+                <p>Transparent processes</p>
                 <p>Ideal for: Diverse options</p>
-                <p>clarity</p>
+                <p>Clarity</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  className={styles.bankImg}
+                  src="/images/BanksForLoan/kuhoo.png"
+                  alt="Sop pics"
+                />
+                <h2 className={styles.heading2}></h2>
+                <p>Efficient Services</p>
+                <p>Customized Solutions</p>
+                <p>Ideal for: Streamlined Processes</p>
+                <p>Quick Approvals</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  className={styles.bankImg}
+                  src="/images/BanksForLoan/Bank-of-Baroda-Logo.png"
+                  alt="Sop pics"
+                  style={{ height: "130px" }}
+                />
+                <h2 className={styles.heading2}></h2>
+                <p>Flexible Offerings</p>
+                <p>Swift Processing</p>
+                <p>Ideal for: Tailored Financial Solutions</p>
+                <p>Competitive Interest Rates</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  className={styles.bankImg}
+                  src="/images/BanksForLoan/Bank_of_Maharashtra_logo.png"
+                  alt="Sop pics"
+                  style={{ height: "130px" }}
+                />
+                <h2 className={styles.heading2}></h2>
+                <p>Holistic Financial Support</p>
+                <p>User-Friendly Processes</p>
+                <p>Ideal for: Comprehensive Services</p>
+                <p>Innovative Digital Solutions</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  className={styles.bankImg}
+                  src="/images/BanksForLoan/Union_Bank_logo.png"
+                  alt="Sop pics"
+                />
+                <h2 className={styles.heading2}></h2>
+                <p>Personalized Financial Assistance</p>
+                <p>Efficient Application Processes</p>
+                <p>Ideal for: Quick Access to Tailored Loan Structures</p>
+                <p>Competitive and Transparent Rates</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  className={styles.bankImg}
+                  src="/images/BanksForLoan/IndusInd Bank.png"
+                  alt="Sop pics"
+                  style={{ height: "187px" }}
+                />
+                <h2 className={styles.heading2}></h2>
+                <p>International Financial Expertise</p>
+                <p>Streamlined and Tech-Savvy Operations</p>
+                <p>
+                  Ideal for: Ideal for Tech-Savvy Individuals Seeking
+                  All-Inclusive Solutions
+                </p>
+                <p>Cost-Effective and Swift Processing</p>
               </div>
             </li>
           </ul>
@@ -148,8 +228,8 @@ const Loan = () => {
               </div>
             </li>
           </ul>
-          </section>
-          <h2 className={`${styles.heading2}`}>
+        </section>
+        <h2 className={`${styles.heading2}`}>
           NBFCs: Nimble Sloops for Unconventional Explorers
         </h2>
         <section className={styles.statistics}>
@@ -171,7 +251,7 @@ const Loan = () => {
               <div>
                 <img
                   className={styles.bankImg}
-                  style={{height:"182px"}}
+                  style={{ height: "182px" }}
                   src="/images/Credila .jpg"
                   alt="Sop pics"
                 />
@@ -187,7 +267,7 @@ const Loan = () => {
                   className={styles.bankImg}
                   src="/images/InCred.png"
                   alt="Sop pics"
-                  style={{height:"182px"}}
+                  style={{ height: "182px" }}
                 />
                 <h2 className={styles.heading2}></h2>
                 <p>Fast processing</p>
@@ -198,7 +278,7 @@ const Loan = () => {
             </li>
           </ul>
         </section>
-              {loanMatchingCaptainSection}
+        {loanMatchingCaptainSection}
       </section>
     </div>
   );

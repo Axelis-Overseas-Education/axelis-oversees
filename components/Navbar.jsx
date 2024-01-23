@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className='fixed z-10 w-full h-20'>
     <div className='justify-center items-center h-10 flex bg-gradient-to-r from-cyan-500 to-blue-500 text-white p-2'>        
     <h1>Book a Free Counseling Session 🎉</h1>
-            <Link href={'/forms'} target='_blank'><button className='text-white bg-transparent border ml-[15px] pt-0 pb-0.5 px-2.5 rounded-[5px] border-solid border-white'>Book A Session</button></Link>  
+    <Link href={{pathname:'/forms', query:{ destination : "https://calendly.com/axelisoverseas/counsellingsession"}}} target='_blank'><button className='text-white bg-transparent border ml-[15px] pt-0 pb-0.5 px-2.5 rounded-[5px] border-solid border-white'>Book A Session</button></Link>  
     </div>
     <div className='h-16 flex justify-between items-center px-8 bg-white'>      
       <Link href={"/"}><img className="h-16 max-auto color-black hover:cursor-pointer" src="/images/logo_black.svg" alt="/" /></Link>      
@@ -116,8 +116,7 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <Link
-                      href="/pdf" 
-                      as={`/pdf/${"usa.pdf"}`}
+                      href={{pathname:'/forms', query:{ destination : `/pdf/${"usa.pdf"}`}}}                      
                       target="_blank"
                         className={classNames(
                           active
@@ -133,8 +132,7 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <Link
-                      href="/pdf" 
-                      as={`/pdf/${"netherlands.pdf"}`}
+                      href={{pathname:'/forms', query:{ destination : `/pdf/${"netherlands.pdf"}`}}}                                 
                       target="_blank"
                         className={classNames(
                           active
@@ -150,8 +148,7 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <Link
-                      href="/pdf" 
-                      as={`/pdf/${"ireland.pdf"}`}
+                      href={{pathname:'/forms', query:{ destination : `/pdf/${"ireland.pdf"}`}}}                      
                       target="_blank"
                         className={classNames(
                           active
@@ -167,8 +164,7 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <Link
-                      href="/pdf" 
-                      as={`/pdf/${"australia.pdf"}`}
+                      href={{pathname:'/forms', query:{ destination : `/pdf/${"australia.pdf"}`}}}                      
                       target="_blank"
                         className={classNames(
                           active
@@ -184,8 +180,7 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <Link
-                      href="/pdf" 
-                      as={`/pdf/${"canada.pdf"}`}
+                      href={{pathname:'/forms', query:{ destination : `/pdf/${"canada.pdf"}`}}}                      
                       target="_blank"
                         className={classNames(
                           active
@@ -201,8 +196,7 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <Link
-                      href="/pdf" 
-                      as={`/pdf/${"singapore.pdf"}`}
+                      href={{pathname:'/forms', query:{ destination : `/pdf/${"singapore.pdf"}`}}}                      
                       target="_blank"
                         className={classNames(
                           active
@@ -218,8 +212,7 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <Link
-                      href="/pdf" 
-                      as={`/pdf/${"uk.pdf"}`}
+                      href={{pathname:'/forms', query:{ destination : `/pdf/${"uk.pdf"}`}}}                      
                       target="_blank"
                         className={classNames(
                           active

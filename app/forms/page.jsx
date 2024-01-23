@@ -1,10 +1,13 @@
 "use client";
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 // import { useRouter } from 'next/router';
-import {useLocation } from 'react-router-dom';
+// import {useLocation } from 'react-router-dom';
 import React, { useState } from 'react'
 
 const RegisterForm = () => {    
+  const searchParam = useSearchParams();
+  console.log(searchParam.get("destination"));
+  const destination = searchParam.get("destination");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -73,7 +76,7 @@ const RegisterForm = () => {
 
       if (res.ok) {
         console.log("Success");
-        router.push("https://calendly.com/axelisoverseas/counsellingsession");
+        router.push(destination);
       } else {
         throw new Error("Failed to create a Customer");
       }

@@ -11,6 +11,15 @@
   text-align: center;
   margin-bottom: 20px;
 }
+
+.universityHeader {
+  font-weight: 800;
+}
+
+.scholarship7Container {
+display:flex;
+}
+
 .scholarshipContainer {
   display: flex;
   flex-wrap: wrap;

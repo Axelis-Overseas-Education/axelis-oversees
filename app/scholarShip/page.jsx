@@ -82,13 +82,22 @@ const Scholarship = () => {
   const collegeScholarships = [
     "1. Central Michigan University, Mount Pleasant, Michigan - International President's Award: $1,000 to $9,000 a year",
     "2. Cleveland State University, Cleveland, Ohio - Academic Excellence Scholarship: $1,500 per year",
-    "University C",
+    "2. Cleveland State University, Cleveland, Ohio - Academic Excellence Scholarship: $1,500 per year",
+    "2. Cleveland State University, Cleveland, Ohio - Academic Excellence Scholarship: $1,500 per year",
+    "2. Cleveland State University, Cleveland, Ohio - Academic Excellence Scholarship: $1,500 per year",
+    "2. Cleveland State University, Cleveland, Ohio - Academic Excellence Scholarship: $1,500 per year",
+    "2. Cleveland State University, Cleveland, Ohio - Academic Excellence Scholarship: $1,500 per year",
+    "2. Cleveland State University, Cleveland, Ohio - Academic Excellence Scholarship: $1,500 per year",
   ];
 
   const thirdPartyScholarships = [
-    "Scholarship X",
-    "Scholarship Y",
-    "Scholarship Z",
+   "2. Cleveland State University, Cleveland, Ohio - Academic Excellence Scholarship: $1,500 per year",
+   "2. Cleveland State University, Cleveland, Ohio - Academic Excellence Scholarship: $1,500 per year",
+   "2. Cleveland State University, Cleveland, Ohio - Academic Excellence Scholarship: $1,500 per year",
+   "2. Cleveland State University, Cleveland, Ohio - Academic Excellence Scholarship: $1,500 per year",
+   "2. Cleveland State University, Cleveland, Ohio - Academic Excellence Scholarship: $1,500 per year",
+   "2. Cleveland State University, Cleveland, Ohio - Academic Excellence Scholarship: $1,500 per year",
+   "2. Cleveland State University, Cleveland, Ohio - Academic Excellence Scholarship: $1,500 per year",
   ];
 
   const openUniversityPopup = (universities, scholarshipType) => {
@@ -143,12 +152,14 @@ const Scholarship = () => {
       <section className={styles.partiesGrid}>
         <div className={styles.gridAlign}>
           <div className={styles.card}>
-            <h2>College Scholarship</h2>
-            <h1>Click to view college scholarship universities list.</h1>
+            <h1 className={styles.universityHeader}>College Scholarship</h1>
+            <p>Click to view college scholarship universities list.</p>
             <button
               className={styles.button}
               onClick={() =>
-                setModal(collegeScholarships.join("\n"))
+                setModal(collegeScholarships.map((scholarship, index) => (
+                  <p key={index}>{scholarship}</p>
+                )))
               }
             >
               Open Universities
@@ -156,13 +167,15 @@ const Scholarship = () => {
           </div>
 
           <div className={styles.card}>
-            <h2>Third-Party Scholarship</h2>
+            <h2 className={styles.universityHeader}>Third-Party Scholarship</h2>
             <h1>Click to view third-party scholarship universities list.</h1>
             <button
               className={styles.button}
               onClick={() =>
                 //openUniversityPopup(thirdPartyScholarships, "Third-Party")
-                setModal(thirdPartyScholarships.join("\n"))
+                 setModal(thirdPartyScholarships.map((scholarship, index) => (
+                  <p key={index}>{scholarship}</p>
+                )))
               }
             >
               Open Universities
@@ -179,7 +192,7 @@ const Scholarship = () => {
               className={styles.scholarshipCard}
 
             >
-              <h2>{scholarship.title}</h2>
+              <h2 className={styles.universityHeader}>{scholarship.title}</h2>
               <div className={styles.content}>
                 <h1
                   className={`${styles.description} ${expandedCard !== scholarship.id ? styles.expanded : ""

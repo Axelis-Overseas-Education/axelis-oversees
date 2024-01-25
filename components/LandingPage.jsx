@@ -2,9 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-const LandingPage = () => {
-  const [showWindow, setShowWindow] = useState(false);
-
+const LandingPage = () => {    
   const services = [
     {
       title: "Part Time Job Assistance",
@@ -37,8 +35,7 @@ const LandingPage = () => {
     //   description: "Comprehensive visa assistance and guidance",
     //   link: "/test-preparation",
     // },
-  ];
-
+  ];  
   return (
     <div className="font-sans">
       <section className="bg-gray-100 relative overflow-hidden w-full pb-[46%]">
@@ -47,15 +44,15 @@ const LandingPage = () => {
         Your browser does not support the video tag.
       </video>
       {/* Your content on top of the video, e.g., text, buttons, etc. */}
-      <div className="absolute top-0 left-0 w-full h-full flex items-center">
-        <h1 className="text-4xl font-bold text-white">We Oversee Your <br /> Overseas Journey
-        <br />
-        </h1>
-        <button className='rounded  font-bold p-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg text-white'>Get Started</button>
-        
-      </div>
-      </section>
-
+      <div className="absolute flex items-center h-screen">            
+        <h1 className="text-4xl w-auto h-1/3 p-8 text-white bg-[#00000063] p-4 rounded-lg -ml-2">We Oversee Your <br /> Overseas Journey</h1>        
+        </div>    
+        <div className="absolute flex items-center h-screen mt-16 left-16">
+        <Link href={{pathname:'/forms', query:{ destination : "https://calendly.com/axelisoverseas/counsellingsession"}}} target="_blank">
+        <button className='rounded-xl text-xl font-bold p-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white'>Get Started</button>
+        </Link>
+        </div>        
+      </section>        
       <section className="py-16">
         <div className="container mx-auto px-8" >
           <h2 className="text-3xl font-bold mb-8">Our Offerings</h2>

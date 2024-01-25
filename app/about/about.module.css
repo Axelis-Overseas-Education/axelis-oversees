@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;    
-    padding-top: 60px;
+    padding-top: 100px;
     background: linear-gradient(rgba(211, 225, 229, 0.5), rgba(202, 217, 225, 0.5)), url("/gif/landmark.gif");
     background-color: rgba(0, 0, 0, 0.5);
     background-size: 100% auto;
@@ -167,7 +167,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 240px;
+  margin:0 6% 6% 6%;
+  background-color: white;
+  border-radius: 2%;
 }
 
 .introduction {
@@ -334,7 +336,7 @@
 }
 
 .faqSection {
-  margin-top: 20px;
+  margin: 0 6%;
 }
 
 .faq {

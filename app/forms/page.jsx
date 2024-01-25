@@ -1,8 +1,13 @@
 "use client";
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
+// import { useRouter } from 'next/router';
+// import {useLocation } from 'react-router-dom';
 import React, { useState } from 'react'
 
-const RegisterhtmlForm = () => {
+const RegisterForm = () => {    
+  const searchParam = useSearchParams();
+  console.log(searchParam.get("destination"));
+  const destination = searchParam.get("destination");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -12,8 +17,8 @@ const RegisterhtmlForm = () => {
   const [country, setCountry] = useState("");
   const [start, setStart] = useState("");
   const [fund, setFund] = useState("");
-
-  const router = useRouter();
+  
+  const router = useRouter();  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -71,7 +76,7 @@ const RegisterhtmlForm = () => {
 
       if (res.ok) {
         console.log("Success");
-        router.push('https://calendly.com/axelisoverseas/counsellingsession');
+        router.push(destination);
       } else {
         throw new Error("Failed to create a Customer");
       }
@@ -82,8 +87,9 @@ const RegisterhtmlForm = () => {
   };
 
   return (
-    <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-      <div className="bg-white my-20 py-8 px-6 shadow rounded-lg sm:px-10">
+    <div className="sm:mx-auto sm:w-full sm:max-w-md pt-32 pb-16">
+      {/* <h1 className='flex align-center'>{destination} </h1> */}
+      <div className="bg-white py-8 px-6 shadow rounded-lg sm:px-10">
         <form onSubmit={handleSubmit} className="mb-0 space-y-6" action="#" method="POST">
           <div>
             <label className="block text-sm font-medium text-gray-700">Full Name</label>
@@ -193,4 +199,4 @@ const RegisterhtmlForm = () => {
   )
 }
 
-export default RegisterhtmlForm
+export default RegisterForm

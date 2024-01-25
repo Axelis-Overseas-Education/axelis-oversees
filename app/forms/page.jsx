@@ -1,12 +1,18 @@
 "use client";
-import { useRouter, useSearchParams } from 'next/navigation';
-// import { useRouter } from 'next/router';
-// import {useLocation } from 'react-router-dom';
-import React, { useState } from 'react'
+import { useRouter } from 'next/router';
+import React, { useState, useEffect, Suspense } from 'react'
 
-const RegisterForm = () => {    
-  const searchParam = useSearchParams();
-  console.log(searchParam.get("destination"));
+const RegisterForm = () => {
+  const [router, setRouter] = useState(null);
+
+  useEffect(() => {
+    setRouter(useRouter());
+  }, []);
+
+  if (!router) {
+    return null;
+  }    
+  const searchParam = new URLSearchParams(router.asPath.split('?')[1]); // Retrieve the searchParam object
   const destination = searchParam.get("destination");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -16,9 +22,7 @@ const RegisterForm = () => {
   const [course, setCourse] = useState("");
   const [country, setCountry] = useState("");
   const [start, setStart] = useState("");
-  const [fund, setFund] = useState("");
-  
-  const router = useRouter();  
+  const [fund, setFund] = useState(""); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -84,6 +88,7 @@ const RegisterForm = () => {
     } catch (error) {
       console.log(error);
     }
+    console.log("Form Submitted");
   };
 
   return (
@@ -199,4 +204,28 @@ const RegisterForm = () => {
   )
 }
 
-export default RegisterForm
+const SearchParamsComponent = () => {
+  const [router, setRouter] = useState(null);
+  useEffect(() => {
+    setRouter(useRouter());
+  }, []);
+  if (!router) {
+    return null;
+  }
+  
+
+  console.log(router.query.destination);
+  return null;
+}
+
+export default function Page() {
+  return (
+    <>
+      <Suspense fallback={<div>Loading...</div>}>
+        <SearchParamsComponent />
+      </Suspense>
+      <RegisterForm />
+    </>
+    
+  )
+}

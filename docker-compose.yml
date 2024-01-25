@@ -8,3 +8,6 @@ services:
     container_name: axelis-oversees-app-container
     ports:
       - "3000:3000"
+    volumes:
+      - .:/root/code/axelis-oversees
+

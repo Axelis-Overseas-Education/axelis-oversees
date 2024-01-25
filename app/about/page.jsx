@@ -36,7 +36,7 @@ const AboutUs = () => {
     {
       name: 'Joydip Bhowmick',
       role: 'Head of Data Science & Analytics',
-      image: '/images/images/joy.jpg',
+      image: '/images/images/Joy.jpg',
       href: 'https://www.linkedin.com/in/joydip-bhowmick-69363315b'
     },
     {
@@ -54,7 +54,7 @@ const AboutUs = () => {
     {
       name: 'Vishwa Priya Talari',
       role: 'Operations Manager',
-      image: '/images/images/Vishwa Priya.jpg',
+      image: '/images/images/Vishwa Priya.JPG',
       href: 'https://www.linkedin.com/in/talarivishwapriya',
     },
     {
@@ -90,13 +90,13 @@ const AboutUs = () => {
     {
       name: 'Rubi Kumari',
       role: 'Business Development Associate',
-      image: '/images/images/Rubi Kumari.jpg',
+      image: '/images/images/Rubi kumari.jpg',
       href: 'https://www.linkedin.com/in/rubi-kumari-77775021b',
     },
     {
       name: 'Jagrati Upadhyay',
       role: 'DevOps Intern',
-      image: '/images/images/jagrati.jpg',
+      image: '/images/images/Jagrati.jpg',
       href: 'https://www.linkedin.com/in/jagrati-upadhyay-079a16221/',
     },
 

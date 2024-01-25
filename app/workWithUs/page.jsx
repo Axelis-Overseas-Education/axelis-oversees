@@ -17,7 +17,7 @@ const WorkWithUs = () => {
         name: 'office2'
       },
       {
-        image: '/images/office3.jpg',
+        image: '/images/office3.JPG',
         name: 'office3'
       }
     // Add similar objects for the remaining culture items

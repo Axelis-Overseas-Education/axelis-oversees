@@ -13,8 +13,10 @@ env:
   # project-name but it can be anything you want
   REPO_NAME: axelis-overseas-app-repo
   IMAGE_NAME: axelis-overseas-app-image
+
   SERVICE_NAME: axelis-overseas-app-run
   SERVICE_REGION: us-central1
+
 
 jobs:
   build-and-deploy:
@@ -40,6 +42,7 @@ jobs:
 
       - name: Deploy
         run: |-
+
           gcloud beta run deploy $SERVICE_NAME \
           --region $SERVICE_REGION \
           --image asia-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/$IMAGE_NAME:$GITHUB_SHA \

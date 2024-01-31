@@ -51,5 +51,6 @@ jobs:
           --quiet \
           && gcloud run services update-traffic $SERVICE_NAME \
           --to-latest \
+          --region $SERVICE_REGION
 
 

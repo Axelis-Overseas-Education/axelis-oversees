@@ -43,7 +43,8 @@ jobs:
       - name: Deploy
         run: |-
 
-          gcloud beta run deploy $SERVICE_NAME \
+          gcloud run deploy $SERVICE_NAME \
+
           --region $SERVICE_REGION \
           --image asia-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/$IMAGE_NAME:$GITHUB_SHA \
           --project $PROJECT_ID \
@@ -52,4 +53,4 @@ jobs:
           && gcloud run services update-traffic $SERVICE_NAME \
           --to-latest \
 
-          
+

@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <div className="p-4 grid lg:grid-cols-3 gap-8 text-gray-300 bg-slate-700">
         <div>
-          <img className="w-[50%]" src="/images/axelis_footer.png" alt="/" />
+          <img className="w-[50%]" src="https://storage.googleapis.com/small-media-axelis-webapp/images/axelis_footer.png" alt="/" />
           {/* <h1 className='w-full text-3xl font-bold text-[#00df9a]'>Axelis Overseas Education Pvt. Ltd.</h1> */}
           {/* <p className="py-4">
             <span>Address: </span> <br />

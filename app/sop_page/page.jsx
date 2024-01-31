@@ -19,7 +19,7 @@ const Sop = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/sop.jpg"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/sop.jpg"
                 alt="Sop pics"
               />
             </div>

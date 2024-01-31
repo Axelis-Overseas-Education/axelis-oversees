@@ -39,7 +39,7 @@ const LandingPage = () => {
   return (
     <div className="font-sans">
       <section className="bg-gray-100 relative overflow-hidden w-full pb-[46%]">
-      <video src="video/home_page.mp4" type="video/mp4" autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover">
+      <video src="https://storage.googleapis.com/small-media-axelis-webapp/video/home_page.mp4" type="video/mp4" autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover">
         {/* <source src="video/home_page.mp4" type="video/mp4" /> */}
         Your browser does not support the video tag.
       </video>

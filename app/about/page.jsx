@@ -18,85 +18,85 @@ const AboutUs = () => {
     {
       name: 'Rishabh Agrawal',
       role: 'Founder',
-      image: '/images/images/Rishabh.png',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/Rishabh.png',
       href: 'https://www.linkedin.com/in/rishabhagrawal1828',
     },
     {
       name: 'John Daniel Oonnoonny',
       role: 'Co-Founder',
-      image: '/images/images/John.jpg',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/John.jpg',
       href:'https://www.linkedin.com/in/john-daniel-oonnoonny-7920b11bb'
     },
     {
       name: 'Shristi Agrawal',
       role: 'Creative Head',
-      image: '/images/images/Shristi Agrawal.jpeg',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/Shristi%20Agrawal.jpeg',
       href: 'https://www.linkedin.com/in/shristi-agrawal',
     },
     {
       name: 'Joydip Bhowmick',
       role: 'Head of Data Science & Analytics',
-      image: '/images/images/joy.jpg',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/Joy.jpg',
       href: 'https://www.linkedin.com/in/joydip-bhowmick-69363315b'
     },
     {
       name: 'Harsh Singh',
       role: 'Head of Business Development',
-      image: '/images/images/Harsh Singh.jpeg',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/Harsh%20Singh.jpeg',
       href: 'https://www.linkedin.com/in/harsh-singh-80b916169',
     },
     {
       name: 'Saee Pushkar Konher',
       role: 'Business Development Manager',
-      image: '/images/images/Saee.jpg',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/Saee.jpg',
       href: 'https://www.linkedin.com/in/saee-konher-11ab60249',
     },
     {
       name: 'Vishwa Priya Talari',
       role: 'Operations Manager',
-      image: '/images/images/Vishwa Priya.jpg',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/Vishwa%20Priya.JPG',
       href: 'https://www.linkedin.com/in/talarivishwapriya',
     },
     {
       name: 'Sidharth Bansal',
       role: 'Software Developer',
-      image: '/images/images/Sidharth Bansal.jpeg',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/Sidharth%20Bansal.jpeg',
       href: 'https://www.linkedin.com/in/bansalsid31',
     },
     {
       name: 'Shubham Raj',
       role: 'Software Developer',
-      image: '/images/images/Shubham.jpg',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/Shubham.jpg',
       href: 'https://www.linkedin.com/in/shubham-raj-2a32a317b',
     },
     {
       name: 'Vicky Kumar',
       role: 'Software Developer',
-      image: '/images/images/vicky.jpg',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/vicky.jpg',
       href: 'https://www.linkedin.com/in/vicky-kumar-raja',
     },
     {
       name: 'Neeraj Thombre',
       role: 'Business Development Associate',
-      image: '/images/images/Neeraj.jpg',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/Neeraj.jpg',
       href: '',
     },
     {
       name: 'Oshin Khandelwal',
       role: 'Business Development Associate',
-      image: '/images/images/Oshin Khandelwal.jpg',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/Oshin%20Khandelwal.jpg',
       href: 'https://www.linkedin.com/in/oshin-khandelwal-083566a4',
     },
     {
       name: 'Rubi Kumari',
       role: 'Business Development Associate',
-      image: '/images/images/Rubi Kumari.jpg',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/Rubi%20kumari.jpg',
       href: 'https://www.linkedin.com/in/rubi-kumari-77775021b',
     },
     {
       name: 'Jagrati Upadhyay',
       role: 'DevOps Intern',
-      image: '/images/images/jagrati.jpg',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/Jagrati.jpg',
       href: 'https://www.linkedin.com/in/jagrati-upadhyay-079a16221/',
     },
 
@@ -191,16 +191,16 @@ const AboutUs = () => {
             <div className={styles.flagImages}>
             <div className={styles.flagContainer}>
               <div className={styles.flagWithText}>
-                <img src="/images/UK.png" alt="Flag 1" className={styles.flag} />
+                <img src="https://storage.googleapis.com/small-media-axelis-webapp/images/UK.png" alt="Flag 1" className={styles.flag} />
               </div>
               <div className={styles.flagWithText}>
-                <img src="/images/Australia.png" alt="Flag 2" className={styles.flag} />
+                <img src="https://storage.googleapis.com/small-media-axelis-webapp/images/Australia.png" alt="Flag 2" className={styles.flag} />
               </div>
               <div className={styles.flagWithText}>
-                <img src="/images/Canada.png" alt="Flag 3" className={styles.flag} />
+                <img src="https://storage.googleapis.com/small-media-axelis-webapp/images/Canada.png" alt="Flag 3" className={styles.flag} />
               </div>
               <div className={styles.flagWithText}>
-                <img src="/images/US.png" alt="Flag 4" className={styles.flag} />
+                <img src="https://storage.googleapis.com/small-media-axelis-webapp/images/US.png" alt="Flag 4" className={styles.flag} />
               </div>
             </div>
           </div>
@@ -237,7 +237,7 @@ const AboutUs = () => {
               <div className={styles.video}>
                 <video
                   ref={videoRef}
-                  src="/video/intro_axelis.mp4"
+                  src="https://storage.googleapis.com/small-media-axelis-webapp/video/intro_axelis.mp4"
                   type="video/mp4"
                   loop
                   className="top-0 left-0 w-25 h-50 object-cover"

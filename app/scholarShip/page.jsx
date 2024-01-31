@@ -199,7 +199,7 @@ const Scholarship = () => {
       ) : null}
       <div className={styles.headingContainer}>
         <img
-          src="/images/Scholarships-main.png"
+          src="https://storage.googleapis.com/small-media-axelis-webapp/images/Scholarships-main.png"
           alt="Image"
           className={styles.headingImage}
         />

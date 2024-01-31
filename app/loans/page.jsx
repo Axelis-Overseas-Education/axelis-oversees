@@ -42,7 +42,7 @@ const Loan = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/loan.jpg"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/loan.jpg"
                 alt="housing assistance pics"
               />
             </div>
@@ -63,7 +63,7 @@ const Loan = () => {
               <div>
                 <img
                   className={styles.bankImg}
-                  src="/images/sbi 1.png"
+                  src="https://storage.googleapis.com/small-media-axelis-webapp/images/sbi%201.png"
                   alt="Sop pics"
                 />
                 <h2 className={styles.heading2}></h2>
@@ -78,7 +78,7 @@ const Loan = () => {
               <div>
                 <img
                   className={styles.bankImg}
-                  src="/images/pnb1.png"
+                  src="https://storage.googleapis.com/small-media-axelis-webapp/images/pnb1.png"
                   alt="Sop pics"
                 />
                 <h2 className={styles.heading2}></h2>
@@ -92,7 +92,7 @@ const Loan = () => {
               <div>
                 <img
                   className={styles.bankImg}
-                  src="/images/canara.png"
+                  src="https://storage.googleapis.com/small-media-axelis-webapp/images/canara.png"
                   alt="Sop pics"
                 />
                 <h2 className={styles.heading2}></h2>
@@ -106,7 +106,7 @@ const Loan = () => {
               <div>
                 <img
                   className={styles.bankImg}
-                  src="/images/BanksForLoan/kuhoo.png"
+                  src="https://storage.googleapis.com/small-media-axelis-webapp/images/BanksForLoan/kuhoo.png"
                   alt="Sop pics"
                 />
                 <h2 className={styles.heading2}></h2>
@@ -120,7 +120,7 @@ const Loan = () => {
               <div>
                 <img
                   className={styles.bankImg}
-                  src="/images/BanksForLoan/Bank-of-Baroda-Logo.png"
+                  src="https://storage.googleapis.com/small-media-axelis-webapp/images/BanksForLoan/Bank-of-Baroda-Logo.png"
                   alt="Sop pics"
                   style={{ height: "130px" }}
                 />
@@ -135,7 +135,7 @@ const Loan = () => {
               <div>
                 <img
                   className={styles.bankImg}
-                  src="/images/BanksForLoan/Bank_of_Maharashtra_logo.png"
+                  src="https://storage.googleapis.com/small-media-axelis-webapp/images/BanksForLoan/Bank_of_Maharashtra_logo.png"
                   alt="Sop pics"
                   style={{ height: "130px" }}
                 />
@@ -150,7 +150,7 @@ const Loan = () => {
               <div>
                 <img
                   className={styles.bankImg}
-                  src="/images/BanksForLoan/Union_Bank_logo.png"
+                  src="https://storage.googleapis.com/small-media-axelis-webapp/images/BanksForLoan/Union_Bank_logo.png"
                   alt="Sop pics"
                 />
                 <h2 className={styles.heading2}></h2>
@@ -164,7 +164,7 @@ const Loan = () => {
               <div>
                 <img
                   className={styles.bankImg}
-                  src="/images/BanksForLoan/IndusInd Bank.png"
+                  src="https://storage.googleapis.com/small-media-axelis-webapp/images/BanksForLoan/IndusInd%20Bank.png"
                   alt="Sop pics"
                   style={{ height: "187px" }}
                 />
@@ -189,7 +189,7 @@ const Loan = () => {
               <div>
                 <img
                   className={styles.bankImg}
-                  src="/images/icici.png"
+                  src="https://storage.googleapis.com/small-media-axelis-webapp/images/icici.png"
                   alt="Sop pics"
                 />
                 <h2 className={styles.heading2}></h2>
@@ -203,7 +203,7 @@ const Loan = () => {
               <div>
                 <img
                   className={styles.bankImg}
-                  src="/images/hdfc.png"
+                  src="https://storage.googleapis.com/small-media-axelis-webapp/images/hdfc.png"
                   alt="Sop pics"
                 />
                 <h2 className={styles.heading2}></h2>
@@ -217,7 +217,7 @@ const Loan = () => {
               <div>
                 <img
                   className={styles.bankImg}
-                  src="/images/axis.png"
+                  src="https://storage.googleapis.com/small-media-axelis-webapp/images/axis.png"
                   alt="Sop pics"
                 />
                 <h2 className={styles.heading2}></h2>
@@ -238,7 +238,7 @@ const Loan = () => {
               <div>
                 <img
                   className={styles.bankImg}
-                  src="/images/avanse Financial Services.jpeg"
+                  src="https://storage.googleapis.com/small-media-axelis-webapp/images/avanse%20Financial%20Services.jpeg"
                   alt="Sop pics"
                 />
                 <h2 className={styles.heading2}></h2>
@@ -252,7 +252,7 @@ const Loan = () => {
                 <img
                   className={styles.bankImg}
                   style={{ height: "182px" }}
-                  src="/images/Credila .jpg"
+                  src="https://storage.googleapis.com/small-media-axelis-webapp/images/Credila%20.jpg"
                   alt="Sop pics"
                 />
                 <h2 className={styles.heading2}></h2>
@@ -265,7 +265,7 @@ const Loan = () => {
               <div>
                 <img
                   className={styles.bankImg}
-                  src="/images/InCred.png"
+                  src="https://storage.googleapis.com/small-media-axelis-webapp/images/InCred.png"
                   alt="Sop pics"
                   style={{ height: "182px" }}
                 />

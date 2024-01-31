@@ -17,7 +17,7 @@ const Lor = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/lor.jpg"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/lor.jpg"
                 alt="lor pics"
               />
             </div>

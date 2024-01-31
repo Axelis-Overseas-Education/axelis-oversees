@@ -1,17 +1,18 @@
-name: axelis-nextjs-webpage
+name: Build and Deploy to Cloud Run
 
 on:
   push:
     branches:
       - Development
+      - main
       
 
 env:
   PROJECT_ID: ${{ secrets.CLOUD_RUN_PROJECT_NAME }}
-  REGION: us-west2
+  REGION: global
   # project-name but it can be anything you want
-  REPO_NAME: axelis-oversees-app-repo
-  IMAGE_NAME: axelis-oversees-app-image
+  REPO_NAME: axelis-overseas-app-repo
+  IMAGE_NAME: axelis-overseas-app-image
 
 jobs:
   build-and-deploy:
@@ -33,12 +34,12 @@ jobs:
 
       - name: Build and push the Docker image
         run: |-
-          gcloud builds submit --region $REGION --tag $REGION-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/$IMAGE_NAME:$GITHUB_SHA
+          gcloud builds submit --region $REGION --tag asia-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/$IMAGE_NAME:$GITHUB_SHA
 
       - name: Deploy
         run: |-
           gcloud run deploy $IMAGE_NAME \
           --region $REGION \
-          --image $REGION-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/$IMAGE_NAME:$GITHUB_SHA \
+          --image asia-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/$IMAGE_NAME:$GITHUB_SHA \
           --platform "managed" \
           --quiet

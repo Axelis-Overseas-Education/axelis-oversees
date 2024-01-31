@@ -9,15 +9,15 @@ const WorkWithUs = () => {
 
   const workPartners = [
       {
-        image: '/images/office1.jpg',
+        image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/office1.jpg',
         name: 'office1'
       },
       {
-        image: '/images/office2.jpg',
+        image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/office2.jpg',
         name: 'office2'
       },
       {
-        image: '/images/office3.jpg',
+        image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/office3.JPG',
         name: 'office3'
       }
     // Add similar objects for the remaining culture items
@@ -63,7 +63,7 @@ const WorkWithUs = () => {
         <h1>Discover endless opportunities and enrich your life by venturing abroad with Axelis Overseas</h1>
       </header>
         <div className={styles.workWithUsSummary}>
-          <img src="/gif/workWithBackground.gif" alt="Flag 1" className={styles.flag} />
+          <img src="https://storage.googleapis.com/small-media-axelis-webapp/gif/workWithBackground.gif" alt="Flag 1" className={styles.flag} />
         </div>
           <div className={styles.landIntro}>
             <div className={styles.introDescription}>

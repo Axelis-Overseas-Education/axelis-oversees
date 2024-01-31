@@ -4,7 +4,7 @@
     align-items: center;
     margin-bottom: 50px;    
     padding-top: 100px;
-    background: linear-gradient(rgba(211, 225, 229, 0.5), rgba(202, 217, 225, 0.5)), url("/gif/landmark.gif");
+    background: linear-gradient(rgba(211, 225, 229, 0.5), rgba(202, 217, 225, 0.5)), url("https://storage.googleapis.com/small-media-axelis-webapp/gif/landmark.gif");
     background-color: rgba(0, 0, 0, 0.5);
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
   }
 
   .aboutContainer {
-    background: linear-gradient(rgba(211, 225, 229, 0.5), rgba(202, 217, 225, 0.5)), url("/images/landmark_page.jpg");
+    background: linear-gradient(rgba(211, 225, 229, 0.5), rgba(202, 217, 225, 0.5)), url("https://storage.googleapis.com/small-media-axelis-webapp/images/landmark_page.jpg");
     background-color: rgba(0, 0, 0, 0.5);
     background-size: 100% auto;
   }

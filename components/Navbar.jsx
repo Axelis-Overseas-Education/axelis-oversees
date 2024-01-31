@@ -17,7 +17,7 @@ const Navbar = () => {
     <Link href={{pathname:'/forms', query:{ destination : "https://calendly.com/axelisoverseas/counsellingsession"}}} target='_blank'><button className='text-white bg-transparent border ml-[15px] pt-0 pb-0.5 px-2.5 rounded-[5px] border-solid border-white'>Book A Session</button></Link>  
     </div>
     <div className='h-16 flex justify-between items-center px-8 bg-white'>      
-      <Link href={"/"}><img className="h-16 max-auto color-black hover:cursor-pointer" src="/images/logo_black.svg" alt="/" /></Link>      
+      <Link href={"/"}><img className="h-16 max-auto color-black hover:cursor-pointer" src="https://storage.googleapis.com/small-media-axelis-webapp/images/logo_black.svg" alt="/" /></Link>      
       <ul className='flex items-center'>      
         <li className='p-4 hover:border-b-2 border-black'>
           <Menu as='div' className='relative inline-block text-left'>

@@ -12,7 +12,7 @@ const PartTimeJobAssistance = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/part-time-job-assistance.jpg"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/part-time-job-assistance.jpg"
                 alt="Sop pics"
               />
             </div>
@@ -50,7 +50,7 @@ const PartTimeJobAssistance = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/Tailored-Guidance-for-UG-and-PG-Programs.jpg"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/Tailored-Guidance-for-UG-and-PG-Programs.jpg"
                 alt="Sop pics"
               />
             </div>
@@ -59,7 +59,7 @@ const PartTimeJobAssistance = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/Extensive-Network-of-Partner-Universities.png"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/Extensive-Network-of-Partner-Universities.png"
                 alt="Sop pics"
               />
             </div>
@@ -99,7 +99,7 @@ const PartTimeJobAssistance = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/Assistance with Admissions and Visa Processes.jpg"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/Assistance with Admissions and Visa Processes.jpg"
                 alt="Sop pics"
               />
             </div>
@@ -108,7 +108,7 @@ const PartTimeJobAssistance = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/Comprehensive Financial Guidance.jpg"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/Comprehensive Financial Guidance.jpg"
                 alt="Sop pics"
               />
             </div>
@@ -149,7 +149,7 @@ const PartTimeJobAssistance = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/Part-Time Assistance.jpg"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/Part-Time Assistance.jpg"
                 alt="Sop pics"
               />
             </div>
@@ -158,7 +158,7 @@ const PartTimeJobAssistance = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/Career Counseling and Alumni Support.jpg"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/Career Counseling and Alumni Support.jpg"
                 alt="Sop pics"
               />
             </div>

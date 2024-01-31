@@ -12,7 +12,7 @@ const HousingAssistsnce = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/housing assistance.jpg"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/housing%20assistance.jpg"
                 alt="housing assistance pics"
               />
             </div>
@@ -46,7 +46,7 @@ const HousingAssistsnce = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/Embarking on a Home Away from Home.jpg"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/Embarking%20on%20a%20Home%20Away%20from%20Home.jpg"
                 alt="Sop pics"
               />
             </div>
@@ -55,7 +55,7 @@ const HousingAssistsnce = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/Tailored Housing Solutions.png"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/Tailored%20Housing%20Solutions.png"
                 alt="Sop pics"
               />
             </div>
@@ -90,7 +90,7 @@ const HousingAssistsnce = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/A Network of Trusted Housing Partners.jpg"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/A%20Network%20of%20Trusted%20Housing%20Partners.jpg"
                 alt="Sop pics"
               />
             </div>
@@ -99,7 +99,7 @@ const HousingAssistsnce = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/Assistance in Application and Documentation.jpg"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/Assistance%20in%20Application%20and%20Documentation.jpg"
                 alt="Sop pics"
               />
             </div>
@@ -138,7 +138,7 @@ const HousingAssistsnce = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/Financial Planning for Housing.jpg"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/Financial%20Planning%20for%20Housing.jpg"
                 alt="Sop pics"
               />
             </div>
@@ -147,7 +147,7 @@ const HousingAssistsnce = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/Part-Time Housing Support.jpg"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/Part-Time%20Housing%20Support.jpg"
                 alt="Sop pics"
               />
             </div>
@@ -188,7 +188,7 @@ const HousingAssistsnce = () => {
             <div>
               <img
                 className={styles.lorMainImage}
-                src="/images/Transitioning to a Future-Ready Career.jpg"
+                src="https://storage.googleapis.com/small-media-axelis-webapp/images/Transitioning%20to%20a%20Future-Ready%20Career.jpg"
                 alt="Sop pics"
               />
             </div>

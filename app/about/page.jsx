@@ -99,6 +99,12 @@ const AboutUs = () => {
       image: '/images/images/jagrati.jpg',
       href: 'https://www.linkedin.com/in/jagrati-upadhyay-079a16221/',
     },
+    {
+      name: 'Magdalena Pietrzykowska',
+      role: 'Data Engineer Intern',
+      image: '/images/images/Magdalena_Pietrzykowska.jpg',
+      href: 'https://www.linkedin.com/in/magdalena-pietrzykowska-706a07177/',
+    },
 
   ];
 

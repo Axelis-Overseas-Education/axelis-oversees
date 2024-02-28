@@ -99,6 +99,12 @@ const AboutUs = () => {
       image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/Jagrati.jpg',
       href: 'https://www.linkedin.com/in/jagrati-upadhyay-079a16221/',
     },
+    {
+      name: 'Pamela Luna',
+      role: 'Full Stack Developer Intern',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/pamela.jpg',
+      href: 'https://www.linkedin.com/in/pam-l-360863296/',
+    },
 
   ];
 

@@ -102,13 +102,13 @@ const AboutUs = () => {
     {
       name: 'Pamela Luna',
       role: 'Full Stack Developer Intern',
-      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/pamela.jpg',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/Pamela%20Luna.JPG',
       href: 'https://www.linkedin.com/in/pam-l-360863296/',
     },
     {
       name: 'Magdalena Pietrzykowska',
       role: 'Data Engineer Intern',
-      image: '',
+      image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/Magdalena_Pietrzykowska.jpg',
       href: 'https://www.linkedin.com/in/magdalena-pietrzykowska-706a07177/',
     },
 

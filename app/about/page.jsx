@@ -107,7 +107,7 @@ const AboutUs = () => {
     },
     {
       name: 'Magdalena Pietrzykowska',
-      role: 'Data Engineer Intern',
+      role: 'Business Analyst',
       image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/Magdalena_Pietrzykowska.jpg',
       href: 'https://www.linkedin.com/in/magdalena-pietrzykowska-706a07177/',
     },

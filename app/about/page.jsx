@@ -105,6 +105,12 @@ const AboutUs = () => {
       image: 'https://storage.googleapis.com/small-media-axelis-webapp/images/images/pamela.jpg',
       href: 'https://www.linkedin.com/in/pam-l-360863296/',
     },
+    {
+      name: 'Magdalena Pietrzykowska',
+      role: 'Data Engineer Intern',
+      image: '',
+      href: 'https://www.linkedin.com/in/magdalena-pietrzykowska-706a07177/',
+    },
 
   ];
 
